@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: montserrat, helvetica neue, helvetica, sans-serif;
+}
+
+.homepage-container {
+  /* color: #d9e1e9; */
+  color: #7b8085;
+  background-image: radial-gradient(
+    circle,
+    rgba(8, 8, 8, 1) 39%,
+    rgba(20, 22, 27, 1) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.homepage-container {
+  align-items: center;
+  padding-left: 20px;
+}
+
+.logo {
+  margin: 0;
+  padding: 15px;
+  max-width: 1%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.about button {
+  font-weight: bolder;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7b8085;
+  transition: transform 0.35s ease;
+}
+.about button a,
+.projects a {
+  color: inherit;
+  text-decoration: none;
+}
+.about button:hover {
+  transform: translateY(-5px);
+  color: #d9e1e9;
+}
+.switch {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mainimg {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.achieve {
+  position: relative;
+  top: 35%;
+  bottom: 50%;
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+}
+.achieve button,
+.exp button {
+  font-weight: bolder;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7b8085;
+  transition: transform 0.35s ease;
+}
+.achieve button a,
+.exp button a {
+  color: inherit;
+  text-decoration: none;
+}
+.achieve button:hover,
+.exp button:hover {
+  transform: translateX(-5px);
+  color: #d9e1e9;
+}
+
+.exp {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 0;
+  margin: 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.social {
+  padding-left: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* .social-icons {
+  color: #7b8085;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+} */
+
+.social-icons {
+  background: none;
+  border: none;
+  display: inline-block;
+  color: #7b8085;
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  height: 60px;
+  font-weight: bold;
+}
+
+.social-icons:hover {
+  color: #d9e1e9;
+}
+
+.label-up {
+  display: block;
+  margin: 0px 0px;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  transition: 0.3s;
+}
+@media screen and (max-width: 350px) {
+  .label-up {
+    font-size: 10px;
+  }
+}
+.social-icons:hover .label-up {
+  top: -100%;
+}
+
+.projects {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  transition: transform 0.35s ease;
+  font-weight: bold;
+}
+
+.projects:hover {
+  font-weight: bold;
+  transform: translateY(5px);
+  color: #d9e1e9;
+}
+.sound {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.sound button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+::selection {
+  color: white;
+  background: #5b6b78;
+}
+body {
+  background-color: rgb(238, 238, 238);
+}
+.container {
+  /* color: #d9e1e9; */
+  color: #7b8085;
+  background-image: radial-gradient(
+    circle,
+    rgba(8, 8, 8, 1) 39%,
+    rgba(20, 22, 27, 1) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  /* background-color: #e0fffd; */
+  color: #91a0ac;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70vh;
+  width: 65vw;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20px;
+  /* max-height: 80vh;
+  overflow-y: auto; */
+}
+
+.content h3 {
+  color: rgb(151, 151, 151);
+}
+.content h3 span {
+  font-size: 24px;
+}
+.content p {
+  color: rgb(53, 53, 53);
+  width: 100%;
+  font-size: 16px;
+  word-spacing: 4px;
+  /* font-weight: lighter; */
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 8px;
+  }
+  .content h3 span {
+    font-size: 20px;
+  }
+  .content h3 {
+    font-size: 17px;
+  }
+}
+
+.social-a {
+  margin-top: 50px;
+  padding-top: 20px;
+}
+.social-icons {
+  background: none;
+  border: none;
+  display: inline-block;
+  color: rgb(171, 171, 171);
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  height: 60px;
+  font-weight: bold;
+}
+
+.social-icons:hover {
+  color: #7b8085;
+}
+
+.label-up {
+  display: block;
+  margin: 0px 0px;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  transition: 0.3s;
+}
+
+.social-icons:hover .label-up {
+  top: -100%;
+}
+.interests {
+  margin-top: 50px;
+}
+.interests ul {
+  list-style-type: none;
+}
+.interests ul li {
+  color: rgb(53, 53, 53);
+  padding-bottom: 6px;
+}
+.contact {
+  margin-top: 40px;
+}
+.contact2 {
+  padding-top: 10px;
+  color: rgb(53, 53, 53);
+}
+.contact2 span {
+  text-decoration: underline;
+}
+.close-div {
+  align-items: center;
+  text-align: center;
+}
+.close {
+  color: rgb(151, 151, 151);
+  margin-top: 30px;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  transition: transform 0.35s ease;
+  font-weight: bold;
+}
+
+.close:hover {
+  font-weight: bold;
+  transform: translateY(5px);
+  color: #7b8085;
+}
