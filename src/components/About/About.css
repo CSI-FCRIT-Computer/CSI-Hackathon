@@ -133,6 +133,6 @@ body {
 
 .close:hover {
   font-weight: bold;
-  transform: translateY(5px);
+  transform: translateY(-5px);
   color: #7b8085;
 }

@@ -40,20 +40,20 @@ const Homepage = () => {
       </div>
       <div className="about">
         <button>
-          <Link to="/about">About</Link>
+          <Link to="/about">About Hackathon</Link>
         </button>
       </div>
       {/* <div className="switch">
         <img src={toggle} width="40" alt="toggle" />
       </div> */}
-      <div className="achieve">
+      <div className="timeline">
         <button>
-          <Link to="/achievements">Achievements</Link>
+          <Link to="/timeline">Timeline</Link>
         </button>
       </div>
-      <div className="exp">
+      <div className="contact-us">
         <button>
-          <Link to="/experience">Experience</Link>
+          <Link to="/contact">Contact-us</Link>
         </button>
       </div>
       <div className="mainimg">
@@ -62,17 +62,17 @@ const Homepage = () => {
       </div>
       <div className="social">
         <button className="social-icons">
-          <span className="label-up">twitter</span>
-          <span className="label-up">twitter</span>
+          <span className="label-up">CSI-COMP</span>
+          <span className="label-up">CSI-COMP</span>
         </button>
         <span>/</span>
         <button className="social-icons">
-          <span className="label-up">linkedin</span>
-          <span className="label-up">linkedin</span>
+          <span className="label-up">CSI-IT</span>
+          <span className="label-up">CSI-IT</span>
         </button>
       </div>
-      <div className="projects">
-        <Link to="/projects">Projects</Link>
+      <div className="problem-statements">
+        <Link to="/ps">Problem statements</Link>
       </div>
       <div className="sound">
         <button className="sound-btn" onClick={toggleAudio}>
