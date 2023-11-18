@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
-import "./Projects.css";
+import "./PS.css";
 import img1 from "./proj/thumb1.jpg";
 
 const cardsData = [
@@ -124,8 +124,8 @@ const Projects = () => {
               <br />• Secured 1828 rank in Google Kickstart Round H.
             </p>
           </div>
-          <div className="close1-div">
-            <button className="close1" onClick={handleButtonClick}>
+          <div className="close-div">
+            <button className="close" onClick={handleButtonClick}>
               close
             </button>
           </div>
