@@ -24,7 +24,7 @@ const Achievements = () => {
       >
         <div className="content">
           <h3>
-            Hello, my name is <span> SAVIO DIAS </span>
+            Lorem Ipsum
             {/* <div class="message">
               <div class="word1">close</div>
               <div class="word2">code</div>
@@ -32,11 +32,12 @@ const Achievements = () => {
             </div> */}
           </h3>
           <p>
-            Sophomore at FCRIT, Vashi. GSoC 2023 Mentee @AsyncAPI. Passionate
-            about technology, I enjoy crafting elegant code and captivating
-            designs. With a love for open-source, I actively contribute to the
-            community. Let's connect and embark on a journey of creativity and
-            innovation together!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat'
+             nulla pariatur. Excepteur sint occaecat cupidatat non 
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div className="social-a">
             <button className="social-icons">
