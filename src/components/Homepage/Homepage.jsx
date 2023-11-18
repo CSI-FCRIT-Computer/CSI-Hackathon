@@ -58,7 +58,7 @@ const Homepage = () => {
       </div>
       <div className="mainimg">
         {/* <img src={logo} width="50" alt="mainimg" /> */}
-        <frame />
+        {/* <frame /> */}
       </div>
       <div className="social">
         <button className="social-icons">
