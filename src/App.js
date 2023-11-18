@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage/Homepage";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Experience from "./components/Experience/Experience";
-import Achievements from "./components/Achievements/Achievements";
+import PS from "./components/PS/PS";
+import Contact from "./components/Contact/ContactUs";
+import Timeline from "./components/Timeline/Timeline";
 import LoadingScreen from "./components/Loading/Loading";
 
 const App = () => {
@@ -29,9 +29,9 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/achieve" element={<Achievements />} />
+          <Route path="/ps" element={<PS />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/timeline" element={<Timeline />} />
         </Routes>
       </BrowserRouter>
     </>

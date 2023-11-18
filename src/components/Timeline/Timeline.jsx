@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion as m } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import "./Achieve.css";
+import "./Timeline.css";
 const Achievements = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
@@ -15,9 +15,9 @@ const Achievements = () => {
   return (
     <div className="container">
       <m.div
-        initial={{ y: "-100%" }}
-        animate={{ y: closed ? "-100%" : "0%" }}
-        exit={{ y: "-100%" }}
+        initial={{ x: "-100%" }}
+        animate={{ x: closed ? "-100%" : "0%" }}
+        exit={{ x: "-100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         style={{ background: "#eee", height: "100vh" }}
         className="background"
