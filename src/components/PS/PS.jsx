@@ -79,7 +79,7 @@ const Projects = () => {
       > */}
         <div className="content1">
           <div className="proj-info">
-            <h3>Projects</h3>
+            <h3>Problem Statements</h3>
             <p>
               Some of my recent work is showcased below, allowing you to explore
               the projects and the techstack I used for each one.
@@ -100,7 +100,7 @@ const Projects = () => {
             ))}
           </div>
           <div className="am">
-            <h3>Achievements</h3>
+            <h3>Evaluation criteria</h3>
             <p>
               Below is a snapshot of my notable achievements. These
               accomplishments highlights my interest and showcase the skills in
