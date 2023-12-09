@@ -43,9 +43,6 @@ const Homepage = () => {
           <Link to="/about">About Hackathon</Link>
         </button>
       </div>
-      {/* <div className="switch">
-        <img src={toggle} width="40" alt="toggle" />
-      </div> */}
       <div className="timeline">
         <button>
           <Link to="/timeline">Timeline</Link>
@@ -56,6 +53,13 @@ const Homepage = () => {
           <Link to="/contact">Contact-us</Link>
         </button>
       </div>
+      <div className="problem-statements">
+        <button>
+          <Link to="/ps">Problem statements</Link>
+        </button>
+      </div>
+
+      
       <div className="mainimg">
         {/* <img src={logo} width="50" alt="mainimg" /> */}
         {/* <frame /> */}
@@ -70,9 +74,6 @@ const Homepage = () => {
           <span className="label-up">CSI-IT</span>
           <span className="label-up">CSI-IT</span>
         </button>
-      </div>
-      <div className="problem-statements">
-        <Link to="/ps">Problem statements</Link>
       </div>
       <div className="sound">
         <button className="sound-btn" onClick={toggleAudio}>

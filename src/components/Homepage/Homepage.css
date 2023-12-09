@@ -32,33 +32,57 @@ body {
   left: 0;
 }
 
+.about button, 
+.contact-us button, 
+.problem-statements button, 
+.timeline button{
+  font-weight: bolder;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+.about button a, 
+.contact-us button a, 
+.problem-statements button a, 
+.timeline button a{
+  color: #7b8085;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.problem-statements button:hover, 
+.timeline button:hover{
+  scale: 1.2;
+  transform: translateX(5px);
+}
+.about button:hover{
+  scale: 1.2;
+  transform: translateY(5px);
+} 
+.contact-us button:hover{
+  scale: 1.2;
+  transform: translateY(-5px);
+}
+
 .about {
   padding: 15px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin: auto;
   text-align: center;
 }
 
-.about button {
-  font-weight: bolder;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #7b8085;
-  transition: transform 0.35s ease;
+.contact-us {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
-.about button a,
-.problem-statements a {
-  color: inherit;
-  text-decoration: none;
-}
-.about button:hover {
-  transform: translateY(-5px);
-  color: #d9e1e9;
-}
+
 .switch {
   padding: 15px;
   position: absolute;
@@ -77,41 +101,28 @@ body {
 }
 
 .timeline {
-  position: relative;
-  top: 35%;
-  bottom: 50%;
-  writing-mode: vertical-rl;
-  transform: rotate(0deg);
-}
-.timeline button,
-.contact-us button {
-  font-weight: bolder;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #7b8085;
-  transition: transform 0.35s ease;
-}
-.timeline button a,
-.contact-us button a {
-  color: inherit;
-  text-decoration: none;
-}
-.timeline button:hover,
-.contact-us button:hover {
-  transform: translateX(-5px);
-  color: #d9e1e9;
-}
-
-.contact-us {
+  padding: 0 15px;
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  top: 0;
   right: 0;
-  margin: 10px;
+  height: 100%;
+  text-align: center;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
+
+.problem-statements {
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+  transition: .5s ease;
+}
+
 
 .social {
   padding-left: 15px;
@@ -162,23 +173,6 @@ body {
   top: -100%;
 }
 
-.problem-statements {
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  transition: transform 0.35s ease;
-  font-weight: bold;
-}
-
-.problem-statements:hover {
-  font-weight: bold;
-  transform: translateY(5px);
-  color: #d9e1e9;
-}
 .sound {
   padding: 15px;
   position: absolute;

@@ -62,21 +62,15 @@ const Projects = () => {
   return (
     <div className="container">
       <m.div
-        initial={{ y: "100%" }}
-        animate={{ y: closed ? "100%" : "0%" }}
-        exit={{ y: "-100%" }}
-        transition={{ duration: 0.75, ease: "easeOut" }}
-        style={{ background: "#eee", height: "120vh" }}
-        className="background"
-      >
-        {/* <m.div
-        initial={{ y: "-100%" }}
-        animate={{ y: closed ? "-100%" : "0%" }}
-        exit={{ y: "-100%" }}
+        initial={{ x: "-100%" }}
+        animate={{ x: closed ? "-100%" : "0%" }}
+        exit={{ x: "-100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         style={{ background: "#eee", height: "100vh" }}
         className="background"
-      > */}
+      >
+
+
         <div className="content1">
           <div className="proj-info">
             <h3>Problem Statements</h3>
@@ -98,31 +92,6 @@ const Projects = () => {
                 </div>
               </a>
             ))}
-          </div>
-          <div className="am">
-            <h3>Evaluation criteria</h3>
-            <p>
-              Below is a snapshot of my notable achievements. These
-              accomplishments highlights my interest and showcase the skills in
-              the field of Web Development, Designing and Competitive
-              Programming.
-            </p>
-            <p>
-              • Secured 5th rank out of 2300+ contributors in Winter of Code 3.0
-              event organized by IIIT Kalyani.
-              <br />• Shortlisted as top 15 teams out of 60 teams in
-              Hackoverflow Hackathon organized by Pillai HOC College,Rasayni.
-              <br />• Shortlisted as top top 35 teams out of 600 teams in
-              Hackanova Hackathon organized by Thakur College of
-              Engineering,Kandivalli.
-              <br />• Achieved 2nd position in Bluesprint Hackathon out of 30
-              teams organized by Bluelearn.
-              <br />• Secured 3rd rank in Bug4ever Annual National Level
-              Flagship contest organized by Arena : Codechef SIES.(Team of 2)
-              <br />• Secured 2nd rank in Technoblitz Clash of Codes, State
-              level coding contest organized by CSI community.
-              <br />• Secured 1828 rank in Google Kickstart Round H.
-            </p>
           </div>
           <div className="close-div">
             <button className="close" onClick={handleButtonClick}>
