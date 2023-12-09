@@ -16,8 +16,21 @@ function Prize() {
       <div className='prize'>
       <div className="prize-card">
         <div className="prize-text">
-          <div className='prize-txt'>PRIZES</div>
-          <img src={prizeImg}  width={1024}/>  
+          <div className='prize-txt'>
+            PRIZES
+          </div>
+          <div className="img-container">
+            <img src={prizeImg}  width={1024}/>
+            <div className="text-overlay1">
+              <div className="one">1</div>
+            </div>
+            <div className="text-overlay2">
+              <div className="two">2</div>
+            </div>
+            <div className="text-overlay3">
+              <div className="three">3</div>
+            </div>
+          </div> 
         </div>
       </div>
       <div className="sponsors-container">
@@ -27,7 +40,7 @@ function Prize() {
             <hr />
         </div>
         <div className="platinum">
-          PLATINUM SPONSORS
+          PLATINUM <span>SPONSORS</span>
           <div className='pcard'>
               {platinumS.map((item) => (
                 <SponsorsCard key={item.id} items={item} />
@@ -35,7 +48,7 @@ function Prize() {
           </div>
         </div>
         <div className="gold">
-          GOLD SPONSORS
+          GOLD <span>SPONSORS</span>
           <div className='gcard'>
               {goldS.map((item) => (
                 <SponsorsCard key={item.id} items={item} />
@@ -43,7 +56,7 @@ function Prize() {
           </div>
         </div>
         <div className="silver">
-          SILVER SPONSORS
+          SILVER <span>SPONSORS</span>
           <div className='scard'>
               {silverS.map((item) => (
                 <SponsorsCard key={item.id} items={item} />
@@ -51,7 +64,7 @@ function Prize() {
           </div>
         </div>
         <div className="bronze">
-          BRONZE SPONSORS
+          BRONZE <span>SPONSORS</span>
           <div className='bcard'>
               {bronzeS.map((item) => (
                 <SponsorsCard key={item.id} items={item} />

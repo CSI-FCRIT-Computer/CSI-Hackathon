@@ -1,22 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kameron&family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Skranji:wght@700&family=Sura:wght@700&family=Syne:wght@600&family=Tapestry&display=swap');
+
 .prize-container{
     
     background-image: url("blending\ 1701768678184.png");
+    backdrop-filter: blur(50px);
     background-size: contain;
 }
 .prize{
     padding: 0 5vw;
     position: relative; 
     background: #03041f;
-    backdrop-filter: blur(50px);
+    
     color: white;
     
-}
-
-.prize::backdrop{
-    content: "";
-    position: absolute;
-    background-image: inherit;
-    filter: blur(50px);
 }
 
 .prize-card{
@@ -25,12 +22,63 @@
     margin-bottom: 3vh;
 }
 
+.img-container{
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+
+  .text-overlay2 {
+    position: absolute;
+    top: 56%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+
+  .text-overlay3 {
+    position: absolute;
+    top: 58%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+
+.one{
+    left: 50%;
+    font-family:tapestry ;
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+.two{
+    font-family:tapestry ;
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.three{
+    font-family:tapestry ;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
 .prize-txt{
     position: absolute;
     z-index: 1;
     left: 50%;
-    top: 5%;
+    top: 3%;
     transform: translate(-60%,-10%);
+    font-family: syne;
+    font-weight: 600;
+    font-size: 4rem;
 }
 
 .sponsors-container{
@@ -53,25 +101,42 @@
     margin-bottom: 5vh;
 }
 
+.sponsors-title hr{
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+}
+
 .sponsors-title-txt{
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
+    font-family: sura;
+    font-weight: 700;
+    font-size: 4rem;
 }
 
 .platinum{
-    color: #FFFEFC;
+    color: #E5E4E2;
     align-self: center;
     width: 40vw;
     margin-bottom: 5vh;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.platinum span{
+    color: #ffffff;
 }
 
 .pcard{
-    margin: 3vh 0;
+    margin: 2vh 0;
     padding: 7vh 0;
     justify-content: space-around;
     border: 2px solid #FFFEFC;
+    border-radius: 10px;
 }
 .pcard img{
     padding: 3vh;
+    max-width: 90%;
 }
 
 .gold{
@@ -79,6 +144,13 @@
     width: 45vw;
     align-self: center;
     margin-bottom: 5vh;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.gold span{
+    color:#ffffff;
 }
 
 .gcard{
@@ -86,12 +158,13 @@
     display: flex;
     justify-content: space-around;
     border: 2px solid #FFD700;
-    margin: 3vh 0;
+    margin: 2vh 0;
+    border-radius: 10px;
     flex-wrap: wrap;
 }
 
 .gcard img{
-    max-width: 80%;
+    max-width: 75%;
     padding: 3vh;
 }
 
@@ -100,6 +173,13 @@
     width: 60vw;
     align-self: center;
     margin-bottom: 5vh;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.silver span{
+    color: #ffffff;
 }
 
 .scard{
@@ -107,12 +187,13 @@
     display: flex;
     justify-content: space-around;
     border: 2px solid #C0C0C0;
-    margin: 3vh 0;
+    margin: 2vh 0;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .scard img{
-    max-width: 70%;
+    max-width: 65%;
     padding: 3vh;
 }
 
@@ -121,6 +202,13 @@
     width: 80vw;
     align-self: center;
     margin-bottom: 5vh;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.bronze span{
+    color: #ffffff;
 }
 
 .bcard{
@@ -128,12 +216,13 @@
     display: flex;
     justify-content: space-around;
     border: 2px solid #CD7F32;
-    margin: 3vh 0;
+    margin: 2vh 0;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .bcard img{
-    max-width: 60%;
+    max-width: 55%;
     padding: 3vh;
 }
 

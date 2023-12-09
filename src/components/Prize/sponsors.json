@@ -58,30 +58,6 @@
         "name" :"abc",
         "type" :"bronze",
         "logo" :"./asset/logo/pngwing.svg"
-    },
-    {
-        "id" :"11",
-        "name" : "abc",
-        "type" : "platinum",
-        "logo" : "./asset/logo/mlh-logo.svg"
-    },
-    {
-        "id" :"12",
-        "name" : "abc",
-        "type" : "gold",
-        "logo" : "./asset/logo/postman.svg"
-    },
-    {
-        "id" :"13",
-        "name" : "abc",
-        "type" : "silver",
-        "logo" : "./asset/logo/postman.svg"
-    },
-    {
-        "id" :"14",
-        "name" : "abc",
-        "type" : "bronze",
-        "logo" : "./asset/logo/postman.svg"
     }
 
 ]
