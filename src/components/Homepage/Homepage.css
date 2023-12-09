@@ -37,6 +37,7 @@ body {
 .problem-statements button, 
 .timeline button{
   font-weight: bolder;
+  letter-spacing: 2px;
   background: none;
   border: none;
   cursor: pointer;
@@ -53,15 +54,15 @@ body {
 
 .problem-statements button:hover, 
 .timeline button:hover{
-  scale: 1.2;
+  scale: 1.1;
   transform: translateX(5px);
 }
 .about button:hover{
-  scale: 1.2;
+  scale: 1.1;
   transform: translateY(5px);
 } 
 .contact-us button:hover{
-  scale: 1.2;
+  scale: 1.1;
   transform: translateY(-5px);
 }
 

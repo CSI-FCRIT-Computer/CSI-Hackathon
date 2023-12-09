@@ -15,8 +15,8 @@ const Achievements = () => {
   return (
     <div className="container">
       <m.div
-        initial={{ x: "-100%" }}
-        animate={{ x: closed ? "-100%" : "0%" }}
+        initial={{ x: "100%" }}
+        animate={{ x: closed ? "100%" : "0%" }}
         exit={{ x: "-100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         style={{ background: "#eee", height: "100vh" }}

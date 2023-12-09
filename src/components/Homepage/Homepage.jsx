@@ -50,12 +50,12 @@ const Homepage = () => {
       </div>
       <div className="contact-us">
         <button>
-          <Link to="/contact">Contact-us</Link>
+          <Link to="/contact">Contact Us</Link>
         </button>
       </div>
       <div className="problem-statements">
         <button>
-          <Link to="/ps">Problem statements</Link>
+          <Link to="/ps">Problem  Statements</Link>
         </button>
       </div>
 
