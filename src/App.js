@@ -6,6 +6,7 @@ import PS from "./components/PS/PS";
 import Contact from "./components/Contact/ContactUs";
 import Timeline from "./components/Timeline/Timeline";
 import LoadingScreen from "./components/Loading/Loading";
+import Prize from "./components/Prize/Prize";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/ps" element={<PS />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/timeline" element={<Timeline />} />
+          <Route path="/prize" element={<Prize />}></Route>
         </Routes>
       </BrowserRouter>
     </>

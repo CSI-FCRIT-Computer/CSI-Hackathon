@@ -1,0 +1,140 @@
+.prize-container{
+    
+    background-image: url("blending\ 1701768678184.png");
+    background-size: contain;
+}
+.prize{
+    padding: 0 5vw;
+    position: relative; 
+    background: #03041f;
+    backdrop-filter: blur(50px);
+    color: white;
+    
+}
+
+.prize::backdrop{
+    content: "";
+    position: absolute;
+    background-image: inherit;
+    filter: blur(50px);
+}
+
+.prize-card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.prize-txt{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 5%;
+    transform: translate(-60%,-10%);
+}
+
+.sponsors-container{
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+}
+
+.sponsors-title{
+    width: 50vw;
+    align-self: center;
+    margin-bottom: 5vh;
+}
+
+.sponsors-title-txt{
+    margin-bottom: 5vh;
+}
+
+.platinum{
+    color: #FFFEFC;
+    align-self: center;
+    width: 40vw;
+    margin-bottom: 5vh;
+}
+
+.pcard{
+    margin: 3vh 0;
+    padding: 7vh 0;
+    justify-content: space-around;
+    border: 2px solid #FFFEFC;
+}
+.pcard img{
+    padding: 3vh;
+}
+
+.gold{
+    color: #FFD700;
+    width: 45vw;
+    align-self: center;
+    margin-bottom: 5vh;
+}
+
+.gcard{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #FFD700;
+    margin: 3vh 0;
+    flex-wrap: wrap;
+}
+
+.gcard img{
+    max-width: 80%;
+    padding: 3vh;
+}
+
+.silver{
+    color: #C0C0C0;
+    width: 60vw;
+    align-self: center;
+    margin-bottom: 5vh;
+}
+
+.scard{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #C0C0C0;
+    margin: 3vh 0;
+    flex-wrap: wrap;
+}
+
+.scard img{
+    max-width: 70%;
+    padding: 3vh;
+}
+
+.bronze{
+    color: #CD7F32;
+    width: 80vw;
+    align-self: center;
+    margin-bottom: 5vh;
+}
+
+.bcard{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #CD7F32;
+    margin: 3vh 0;
+    flex-wrap: wrap;
+}
+
+.bcard img{
+    max-width: 60%;
+    padding: 3vh;
+}
+
+
