@@ -66,6 +66,7 @@ body {
   transform: translateY(-5px);
 }
 
+
 .about {
   padding: 15px;
   position: absolute;
@@ -152,7 +153,6 @@ body {
   height: 60px;
   font-weight: bold;
 }
-
 .social-icons:hover {
   color: #d9e1e9;
 }
