@@ -30,11 +30,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
-.about {
-  padding: 15px;
+.about-navigator {
+  padding-top: 15px;
   position: absolute;
+  max-width: fit-content;
   top: 0;
   left: 0;
   right: 0;
@@ -42,7 +44,7 @@ body {
   text-align: center;
 }
 
-.about button {
+.about-navigator button{
   font-weight: bolder;
   background: none;
   border: none;
@@ -50,12 +52,12 @@ body {
   color: #7b8085;
   transition: transform 0.35s ease;
 }
-.about button a,
+.about-navigator button a,
 .problem-statements a {
   color: inherit;
   text-decoration: none;
 }
-.about button:hover {
+.about-navigator button:hover {
   transform: translateY(-5px);
   color: #d9e1e9;
 }
@@ -78,7 +80,7 @@ body {
 
 .timeline {
   position: relative;
-  top: 35%;
+  /* top: 35%; */
   bottom: 50%;
   writing-mode: vertical-rl;
   transform: rotate(0deg);
