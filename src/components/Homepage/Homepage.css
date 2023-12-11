@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -6,22 +7,35 @@ body {
 }
 
 .homepage-container {
-  /* color: #d9e1e9; */
-  color: #7b8085;
-  background-image: radial-gradient(
-    circle,
-    rgba(8, 8, 8, 1) 39%,
-    rgba(20, 22, 27, 1) 100%
-  );
+  color: #d9e1e9;
+  background: url(bg.png) repeat 0 0;
+  animation: bg-scrolling-reverse 3s infinite;
+  animation-timing-function: linear;
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
 }
 .homepage-container {
   align-items: center;
   padding-left: 20px;
 }
 
+.csilogo {
+  margin: 0;
+  padding-top: 1.2rem;
+  padding-right: 4rem;
+  max-width: 1%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index:5;
+}
 .logo {
   margin: 0;
   padding: 15px;
@@ -40,6 +54,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   margin: auto;
   text-align: center;
 }
@@ -67,7 +82,26 @@ body {
   top: 0;
   right: 0;
 }
-
+.title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+.title .main-title{
+  font-size: 6rem;
+}
+.title .tw{
+  font-size: 2rem;
+}
 .mainimg {
   position: absolute;
   top: 50%;
@@ -79,6 +113,7 @@ body {
 }
 
 .timeline {
+  z-index: 1;
   position: relative;
   /* top: 35%; */
   bottom: 50%;
