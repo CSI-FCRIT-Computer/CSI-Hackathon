@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c09f0bb.css",
-    "main.js": "/static/js/main.f99a67ca.js",
+    "main.css": "/static/css/main.41711d73.css",
+    "main.js": "/static/js/main.61722d2a.js",
+    "static/media/csi-comp.JPG": "/static/media/csi-comp.f85f59bd803d3a4150ba.JPG",
+    "static/media/College.png": "/static/media/College.509c1e76693a76d208a9.png",
     "static/media/bg-sound.mp3": "/static/media/bg-sound.156eb62c988807ef5800.mp3",
+    "static/media/csi-it.png": "/static/media/csi-it.bffd603148fced92d5ec.png",
+    "static/media/AboutTextBg.png": "/static/media/AboutTextBg.3164020a5f07dad37727.png",
     "static/media/thumb1.jpg": "/static/media/thumb1.7e6242062209e1f0cd29.jpg",
     "static/media/toggle.png": "/static/media/toggle.5aa66b42e5e4c6d32352.png",
     "index.html": "/index.html",
-    "main.0c09f0bb.css.map": "/static/css/main.0c09f0bb.css.map",
-    "main.f99a67ca.js.map": "/static/js/main.f99a67ca.js.map"
+    "static/media/cancel_FILL0_wght400_GRAD0_opsz24.svg": "/static/media/cancel_FILL0_wght400_GRAD0_opsz24.1ff57ce6780d039fcce3508f0763e1b8.svg",
+    "main.41711d73.css.map": "/static/css/main.41711d73.css.map",
+    "main.61722d2a.js.map": "/static/js/main.61722d2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c09f0bb.css",
-    "static/js/main.f99a67ca.js"
+    "static/css/main.41711d73.css",
+    "static/js/main.61722d2a.js"
   ]
 }

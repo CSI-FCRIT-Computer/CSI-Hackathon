@@ -1,1 +1,27 @@
+# IDE-specific files
+.idea/
+.vscode/
+.gitpod.yml
+
+# Node.js
 node_modules
+npm-debug.log
+yarn-error.log
+
+# Compiled files
+bin/
+out/
+target/
+build/
+
+# Dependency directories
+venv/
+env/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
