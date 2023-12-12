@@ -68,7 +68,7 @@ body {
   transition: transform 0.35s ease;
 }
 .about-navigator button a,
-.problem-statements a {
+.other a {
   color: inherit;
   text-decoration: none;
 }
@@ -130,16 +130,16 @@ body {
   text-align: center;
 }
 
-.timeline {
+.ps {
   z-index: 1;
   position: relative;
   /* top: 35%; */
-  bottom: 50%;
+  bottom: 63%;
   writing-mode: vertical-rl;
   transform: rotate(0deg);
 }
 .timeline button,
-.contact-us button {
+.ps button {
   font-weight: bolder;
   background: none;
   border: none;
@@ -148,20 +148,20 @@ body {
   transition: transform 0.35s ease;
 }
 .timeline button a,
-.contact-us button a {
+.ps button a {
   color: inherit;
   text-decoration: none;
 }
 .timeline button:hover,
-.contact-us button:hover {
+.ps button:hover {
   transform: translateX(-5px);
   color: #d9e1e9;
 }
 
-.contact-us {
+.timeline {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  /* top: 50%; */
+  bottom: 46%;
   right: 0;
   margin: 10px;
   writing-mode: vertical-rl;
@@ -217,7 +217,7 @@ body {
   top: -100%;
 }
 
-.problem-statements {
+.other {
   padding: 15px;
   position: absolute;
   bottom: 0;
@@ -229,7 +229,7 @@ body {
   font-weight: bold;
 }
 
-.problem-statements:hover {
+.other:hover {
   font-weight: bold;
   transform: translateY(5px);
   color: #d9e1e9;

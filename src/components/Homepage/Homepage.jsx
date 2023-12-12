@@ -62,18 +62,18 @@ const Homepage = () => {
        <div className="csilogo">
         <img src={csilogo} width="50" alt="csilogo" />
       </div>
-      <div className="timeline">
+      <div className="ps">
         <button>
-          <Link to="/timeline">Timeline</Link>
+          <Link to="/contact">Problem Statement</Link>
         </button>
       </div>
       <div className="title">
         <div className="main-title">AGNETHON</div>
         <Typewriter className="tw">Code.Collaborate.Conquer</Typewriter>
       </div>
-      <div className="contact-us">
+      <div className="timeline">
         <button>
-          <Link to="/contact">Contact-us</Link>
+          <Link to="/timeline">Timeline</Link>
         </button>
       </div>
       <div className="mainimg">
@@ -91,8 +91,8 @@ const Homepage = () => {
           <span className="label-up">CSI-IT</span>
         </button>
       </div>
-      <div className="problem-statements">
-        <Link to="/ps">Problem statements</Link>
+      <div className="other">
+        <Link to="/ps">Other</Link>
       </div>
       <div className="sound">
         <button className="sound-btn" onClick={toggleAudio}>
