@@ -47,15 +47,15 @@ const Homepage = () => {
       <div className="logo">
         <img src={logo} width="25" alt="logo" />
       </div>
-      <Link to="/about">
-      <div className="about-navigator">
-          <button>About Hackathon</button>
-      </div>
-      </Link>
         
       {/* <div className="switch">
         <img src={toggle} width="40" alt="toggle" />
       </div> */}
+      <div className="about">
+        <button>
+          <Link to="/about">About Hackathon</Link>
+        </button>
+      </div>
       <div className="timeline">
         <button>
           <Link to="/timeline">Timeline</Link>

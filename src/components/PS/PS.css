@@ -75,19 +75,16 @@ h1.ps-title{
   bottom: 50px;
   width: 100%;
   z-index: 111111;
+  text-align: center;
 }
 .close {
   color: rgb(151, 151, 151);
-  text-align: center;
   background: none;
   border: none;
   cursor: pointer;
-  align-items: center;
   transition: transform 0.35s ease;
   font-weight: bold;
-  margin: 0;
 } 
-
 .close:hover {
   font-weight: bold;
   transform: translateY(-5px);
