@@ -51,14 +51,11 @@ const Homepage = () => {
       <div className="about-navigator">
           <button>About Hackathon</button>
       </div>
-<<<<<<< HEAD
-=======
       </Link>
         
       {/* <div className="switch">
         <img src={toggle} width="40" alt="toggle" />
       </div> */}
->>>>>>> 70081b9f6e1495cc69e51facb059a8280a0fbeec
       <div className="timeline">
         <button>
           <Link to="/timeline">Timeline</Link>

@@ -33,7 +33,6 @@ body {
   z-index: 100;
 }
 
-<<<<<<< HEAD
 .about button, 
 .contact-us button, 
 .problem-statements button, 
@@ -71,10 +70,8 @@ body {
 
 .about {
   padding: 15px;
-=======
 .about-navigator {
   padding-top: 15px;
->>>>>>> 70081b9f6e1495cc69e51facb059a8280a0fbeec
   position: absolute;
   max-width: fit-content;
   top: 0;
@@ -83,7 +80,6 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .contact-us {
   padding: 15px;
   position: absolute;
@@ -91,7 +87,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-=======
+}
 .about-navigator button{
   font-weight: bolder;
   background: none;
@@ -108,7 +104,6 @@ body {
 .about-navigator button:hover {
   transform: translateY(-5px);
   color: #d9e1e9;
->>>>>>> 70081b9f6e1495cc69e51facb059a8280a0fbeec
 }
 
 .switch {
@@ -129,9 +124,7 @@ body {
 }
 
 .timeline {
-<<<<<<< HEAD
   padding: 0 15px;
-=======
   position: relative;
   /* top: 35%; */
   bottom: 50%;
@@ -159,7 +152,6 @@ body {
 }
 
 .contact-us {
->>>>>>> 70081b9f6e1495cc69e51facb059a8280a0fbeec
   position: absolute;
   top: 0;
   right: 0;
@@ -241,4 +233,5 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+}
 }
