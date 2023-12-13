@@ -3,12 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import "./PS.css";
 import ps from "./ps.json"
-import img1 from "./proj/thumb1.jpg";
 
 const web = ps.filter(card => card.type === "web");
 const design = ps.filter(card => card.type === "design");
 
-const Projects = () => {
+const PS = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
 
@@ -20,17 +19,17 @@ const Projects = () => {
   };
 
   return (
-    <div className="container">
+    <div className="main">
       <m.div
         initial={{ x: "-100%" }}
         animate={{ x: closed ? "-100%" : "0%" }}
-        exit={{ x: "-100%" }}
+        exit={{ x: "100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
-        style={{ background: "transparent", height: "100vh" }}
+        style={{ background: 'black', height: "100vh" }}
         className="background"
       >
 
-        <h1 className="title">Problem Statements</h1>
+        <h1 className="ps-title">Problem Statements</h1>
         
         <div className="card-container">
 
@@ -91,4 +90,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default PS;

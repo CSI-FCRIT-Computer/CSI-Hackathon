@@ -111,6 +111,7 @@ body {
   text-align: center;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  transition: .5s ease;
 }
 
 .problem-statements {

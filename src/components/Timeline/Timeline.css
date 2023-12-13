@@ -1,0 +1,130 @@
+::-webkit-scrollbar{
+  display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main{
+    background: transparent;
+  }
+  h1.timeline-title{
+    font-size: 56px;
+    color: #fff;
+    position: absolute;
+    right: calc(100% - 150px);
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    z-index: 2;
+  }
+  .timeline-container {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    position:relative;
+    overflow: auto;
+    display: flex;
+    z-index: 111;
+  }
+  .day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+  } 
+  h2.title-day{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .timeline-content {
+    width: 200px;
+    height: 100%;
+    position: relative;
+  }
+  .timeline-content:first-child{
+    margin-left: 0;
+  }
+  .timeline-content:last-child{
+    margin-right: 0;
+  }
+  .timeline-content:before {
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    top: 50%;
+    background: #FFF;
+    content: "";
+    z-index: -1;
+  }
+  .timeline-content:after {
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-100%);
+    background: #FFF;
+    content: "";
+    z-index: -1;
+    /* border: 2px solid red; */
+  }
+  .timeline-icon{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: red;
+  }
+  .timeline-info{
+    color: #FFF;
+    position: absolute;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .timeline-event{
+    text-align: center;
+  }
+  .timeline-period {
+    padding: 10px;
+    width: 100px;
+    text-align:center;
+  }
+
+
+  .timeline-content:nth-child(odd)::after{
+      transform: translateY(0%);
+  }
+  .timeline-content:nth-child(odd) {
+    .timeline-icon {
+      background-color: blue;
+      top: 70%;
+    }
+    .timeline-info{
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
