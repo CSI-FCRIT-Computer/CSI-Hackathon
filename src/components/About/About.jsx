@@ -3,6 +3,13 @@ import { motion as m } from "framer-motion";
 import "./About.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
+import college from "./images/College.png";
+import AboutUsText from "./AboutUsText";
+import CsiGrid from "./CsiGrid";
+import AboutAgnethon from "./AboutAgnethon";
+import Close from "./images/cancel_FILL0_wght400_GRAD0_opsz24.svg";
+
+
 const About = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
@@ -14,70 +21,41 @@ const About = () => {
     }, 700);
   };
   return (
-    <div className="container">
+    <div className="About about-container">
       <m.div
-        initial={{ y: "-100%" }}
-        animate={{ y: closed ? "-100%" : "0%" }}
-        exit={{ y: "-100%" }}
-        transition={{ duration: 0.75, ease: "easeOut" }}
-        style={{ background: "#eee", height: "100vh" }}
+        initial={{ y: "-100vh" }}
+        animate={{ y: closed ? "-100vh" : "0%" }}
+        exit={{ y: "-100vh" }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        style={{ background: "transparent", height: "100%" }}
         className="background"
       >
         <div className="logo">
           <img src={logo} width="25" alt="logo" />
         </div>
-        <div className="content">
-          <h3>
-            AGNETHON
-            {/* <div class="message">
-              <div class="word1">close</div>
-              <div class="word2">code</div>
-              <div class="word3">creating</div>
-            </div> */}
-          </h3>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-             Excepteur sint occaecat 
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div className="social-a">
-            <button className="social-icons">
-              <span className="label-up">twitter</span>
-              <span className="label-up">twitter</span>
-            </button>
-            <span>/</span>
-            <button className="social-icons">
-              <span className="label-up">linkedin</span>
-              <span className="label-up">linkedin</span>
-            </button>
-            <span>/</span>
-            <button className="social-icons">
-              <span className="label-up">github</span>
-              <span className="label-up">github</span>
-            </button>
-          </div>
-          <div className="interests">
-            Interests
-            <ul>
-              <li>Open Source Developer</li>
-              <li>Web Design & Developer</li>
-              <li>Competitive Programmer</li>
-              <li>UI & UX Designer</li>
-              <li>Game Developer</li>
-            </ul>
-          </div>
-          <div className="contact">
-            <div className="contact1">Want to contact me?</div>
-            <div className="contact2">
-              Send me email over at <span>diassavio629@gmail.com</span>
-            </div>
-          </div>
+        <div className="About-content">
+        <AboutAgnethon />
+
+        <div className="clg-img">
+          <img src={college} className="img-fluid" alt="College"/>
+          </div> 
+
+        <AboutUsText />
+        <CsiGrid />
+
+        <div className="how-to-reach">
+          <h1>VISIT US</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7321044862974!2d72.98912937435549!3d19.075512682128895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6cae0d8c5ab%3A0xbbf4481d662ca2d8!2sFr.%20Conceicao%20Rodrigues%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1702292962627!5m2!1sen!2sin"
+         className="map" style={{border:0}} 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
           <div className="close-div">
             <button className="close" onClick={handleButtonClick}>
-              close
+            <span class="material-symbols-outlined" >
+            cancel
+            </span>
             </button>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Homepage.css"; // Create Homepage.css file for styling
+import { motion as m } from "framer-motion";
 import logo from "../assets/logo.png";
 import toggle from "../assets/toggle.png";
 import soundoff from "../assets/icon-sound-off.png";
@@ -35,14 +36,29 @@ const Homepage = () => {
 
   return (
     <div className="homepage-container">
+       <m.div
+        initial={{ y: "-300%" }}
+        animate={{ y: closed ? "-300%" : "0%" }}
+        exit={{ y: "-300%" }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+        style={{ background: "transparent", height: "100vh" }}
+        className="background"
+      ></m.div>
       <div className="logo">
         <img src={logo} width="25" alt="logo" />
       </div>
-      <div className="about">
-        <button>
-          <Link to="/about">About Hackathon</Link>
-        </button>
+      <Link to="/about">
+      <div className="about-navigator">
+          <button>About Hackathon</button>
       </div>
+<<<<<<< HEAD
+=======
+      </Link>
+        
+      {/* <div className="switch">
+        <img src={toggle} width="40" alt="toggle" />
+      </div> */}
+>>>>>>> 70081b9f6e1495cc69e51facb059a8280a0fbeec
       <div className="timeline">
         <button>
           <Link to="/timeline">Timeline</Link>
