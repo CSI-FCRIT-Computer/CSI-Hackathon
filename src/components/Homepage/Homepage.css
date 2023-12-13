@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -6,22 +7,35 @@ body {
 }
 
 .homepage-container {
-  /* color: #d9e1e9; */
-  color: #7b8085;
-  background-image: radial-gradient(
-    circle,
-    rgba(8, 8, 8, 1) 39%,
-    rgba(20, 22, 27, 1) 100%
-  );
+  color: #d9e1e9;
+  background: url(bg.png) repeat 0 0;
+  animation: bg-scrolling-reverse 3s infinite;
+  animation-timing-function: linear;
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
 }
 .homepage-container {
   align-items: center;
   padding-left: 20px;
 }
 
+.csilogo {
+  margin: 0;
+  padding-top: 1.2rem;
+  padding-right: 4rem;
+  max-width: 1%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index:5;
+}
 .logo {
   margin: 0;
   padding: 15px;
@@ -40,6 +54,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   margin: auto;
   text-align: center;
 }
@@ -53,7 +68,7 @@ body {
   transition: transform 0.35s ease;
 }
 .about-navigator button a,
-.problem-statements a {
+.other a {
   color: inherit;
   text-decoration: none;
 }
@@ -67,7 +82,44 @@ body {
   top: 0;
   right: 0;
 }
+.title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+.title .main-title{
+  font-size: 7vw;
+}
+.typewriter h1{
+  font-size: 2.6vw;
+}
+/* @media (max-width: 1100px) {
+  .title .main-title {
+    font-size: 4rem; 
+  }
 
+  .typewriter h1 {
+    font-size: 1.8rem; 
+  }
+}
+@media (max-width: 750px) {
+  .title .main-title {
+    font-size: 3rem; 
+  }
+
+  .typewriter h1 {
+    font-size: 1.4rem; 
+  }
+} */
 .mainimg {
   position: absolute;
   top: 50%;
@@ -78,15 +130,16 @@ body {
   text-align: center;
 }
 
-.timeline {
+.ps {
+  z-index: 1;
   position: relative;
   /* top: 35%; */
-  bottom: 50%;
+  bottom: 63%;
   writing-mode: vertical-rl;
   transform: rotate(0deg);
 }
 .timeline button,
-.contact-us button {
+.ps button {
   font-weight: bolder;
   background: none;
   border: none;
@@ -95,20 +148,20 @@ body {
   transition: transform 0.35s ease;
 }
 .timeline button a,
-.contact-us button a {
+.ps button a {
   color: inherit;
   text-decoration: none;
 }
 .timeline button:hover,
-.contact-us button:hover {
+.ps button:hover {
   transform: translateX(-5px);
   color: #d9e1e9;
 }
 
-.contact-us {
+.timeline {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  /* top: 50%; */
+  bottom: 46%;
   right: 0;
   margin: 10px;
   writing-mode: vertical-rl;
@@ -164,7 +217,7 @@ body {
   top: -100%;
 }
 
-.problem-statements {
+.other {
   padding: 15px;
   position: absolute;
   bottom: 0;
@@ -176,7 +229,7 @@ body {
   font-weight: bold;
 }
 
-.problem-statements:hover {
+.other:hover {
   font-weight: bold;
   transform: translateY(5px);
   color: #d9e1e9;

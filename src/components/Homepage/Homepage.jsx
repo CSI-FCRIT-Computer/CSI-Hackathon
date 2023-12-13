@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./Homepage.css"; // Create Homepage.css file for styling
+import "./Homepage.css"; 
+import csilogo from "../assets/csilogo.png";
+import Typewriter from './typewriter/typewriter.js';
 import { motion as m } from "framer-motion";
 import logo from "../assets/logo.png";
 import toggle from "../assets/toggle.png";
 import soundoff from "../assets/icon-sound-off.png";
 import soundon from "../assets/icon-sound-on.png";
 import bgsound from "../assets/bg-sound.mp3";
-import frame from "../frame.jsx";
 import { Link } from "react-router-dom";
 const Homepage = () => {
   const audioRef = useRef(null);
@@ -45,25 +46,34 @@ const Homepage = () => {
         className="background"
       ></m.div>
       <div className="logo">
-        <img src={logo} width="25" alt="logo" />
+        <img src={logo} width="75" alt="logo" />
       </div>
-      <Link to="/about">
+
       <div className="about-navigator">
+      <Link to="/about">
           <button>About Hackathon</button>
+          </Link>
       </div>
-      </Link>
+
         
       {/* <div className="switch">
         <img src={toggle} width="40" alt="toggle" />
       </div> */}
+       <div className="csilogo">
+        <img src={csilogo} width="50" alt="csilogo" />
+      </div>
+      <div className="ps">
+        <button>
+          <Link to="/contact">Problem Statement</Link>
+        </button>
+      </div>
+      <div className="title">
+        <div className="main-title">AGNETHON</div>
+        <Typewriter className="tw">Code.Collaborate.Conquer</Typewriter>
+      </div>
       <div className="timeline">
         <button>
           <Link to="/timeline">Timeline</Link>
-        </button>
-      </div>
-      <div className="contact-us">
-        <button>
-          <Link to="/contact">Contact-us</Link>
         </button>
       </div>
       <div className="mainimg">
@@ -81,8 +91,8 @@ const Homepage = () => {
           <span className="label-up">CSI-IT</span>
         </button>
       </div>
-      <div className="problem-statements">
-        <Link to="/ps">Problem statements</Link>
+      <div className="other">
+        <Link to="/ps">Other</Link>
       </div>
       <div className="sound">
         <button className="sound-btn" onClick={toggleAudio}>
