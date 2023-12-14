@@ -1,4 +1,5 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import React  from "react";
 import "./About.css";
 import CSI_Comp from "./images/csi-comp.JPG";
 import CSI_IT from "./images/csi-it.png";
@@ -6,10 +7,12 @@ import { useInView } from 'react-intersection-observer';
 
 
 const CsiGrid=()=>{
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [smallWidth,setSmallWidth]=useState();
     const ScalingComponent = ({ children }) => {
         const [ref, inView] = useInView({
           triggerOnce: false, 
-          rootMargin: '-10%', // Only trigger the animation once
+          rootMargin: '-5%', 
         });
       
         return (
@@ -18,6 +21,28 @@ const CsiGrid=()=>{
           </div>
         );
       };
+
+      useEffect(() => {
+        const handleWindowResize = () => {
+          setWindowWidth(window.innerWidth);
+          if(windowWidth<576){
+            setSmallWidth(true);
+          }else{
+            setSmallWidth(false);
+          }
+        };
+        window.addEventListener('resize', handleWindowResize);
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
+      });
+    
+        const itText=`Welcome to the Computer Society of India (CSI), a hub where technology converges with
+        innovation and excellence. Committed to fostering collaboration and knowledge-sharing,
+        CSI empowers individuals through continuous learning and skill development. With a legacy
+        spanning [insert years], CSI has been a driving force in technological advancements,
+        evident in groundbreaking projects and cutting-edge research showcased at our events.`
+
 
     return(
         <div className="csi-grid">
@@ -45,24 +70,28 @@ const CsiGrid=()=>{
                 <div className="csi-it-head col-12">
                 <h1>CSI IT</h1>
                 </div>
-                <div className="csi-it-pic col-12 col-sm-6">
-                    <ScalingComponent>
-                    <img className="img-fluid" src={CSI_IT} />
-                    </ScalingComponent>
-                </div>
-                <div className="csi-it-text col-12 col-sm-6 ">
-                    
+                {!smallWidth &&
+                  <div className="csi-it-pic col-12 col-sm-6">
+                      <ScalingComponent>
+                      <img className="img-fluid" src={CSI_IT} />
+                      </ScalingComponent>
+                  </div>
+                }
+
+                <div className="csi-it-text col-12 col-sm-6 "> 
                     <ScalingComponent>
                     <p className="it-text">
-                    Welcome to the Computer Society of India (CSI), a hub where technology converges with
-                    innovation and excellence. Committed to fostering collaboration and knowledge-sharing,
-                    CSI empowers individuals through continuous learning and skill development. With a legacy
-                    spanning [insert years], CSI has been a driving force in technological advancements,
-                    evident in groundbreaking projects and cutting-edge research showcased at our events.
+                   {itText}
                     </p>
                     </ScalingComponent>
-
                 </div>
+                {smallWidth &&
+                  <div className="csi-it-pic col-12 col-sm-6">
+                  <ScalingComponent>
+                  <img className="img-fluid" src={CSI_IT} />
+                  </ScalingComponent>
+                  </div> 
+                }
              
             </div>
         </div>
