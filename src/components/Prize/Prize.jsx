@@ -1,4 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { useNavigate } from "react-router-dom";
+import { motion as m } from "framer-motion";
+import Contact from './Contact'
 import "./Prize.css"
 import SponsorsCard from './SponsorsCard'
 import prizeImg from "./Rectangle 24.svg"
@@ -6,13 +9,35 @@ import sponsorsList from "./sponsors.json"
 
 
 function Prize() {
+
   const platinumS = sponsorsList.filter((item) => item.type === "platinum")
   const goldS = sponsorsList.filter(item => item.type === "gold")
   const silverS = sponsorsList.filter(item => item.type === "silver")
   const bronzeS = sponsorsList.filter(item => item.type === "bronze")
 
+
+  const [closed, setClosed] = useState(false);
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    setClosed(true);
+    setTimeout(() => {
+      navigate("/");
+    }, 900);
+  };
+
+
   return (
-    <div className="prize-container">
+    <>
+      <m.div
+        initial={{ y: "100%" }}
+        animate={{ y: closed ? "100%" : "0%" }}
+        exit={{ y: "-100%" }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+        style={{ background: "#eee", height: "120vh" }}
+        className="background"
+      >
+        <div className="prize-container">
       <div className='prize'>
       <div className="prize-card">
         <div className="prize-text">
@@ -20,7 +45,7 @@ function Prize() {
             PRIZES
           </div>
           <div className="img-container">
-            <img src={prizeImg}  width={1024}/>
+            <img src={prizeImg}/>
             <div className="text-overlay1">
               <div className="one">1</div>
             </div>
@@ -73,8 +98,18 @@ function Prize() {
         </div>
       </div>
       </div>
+      <div className="contact">
+        <Contact/>
+      </div>
+      <div className="close-prize">
+            <button className="close-btn" onClick={handleButtonClick}>
+              close
+            </button>
+      </div>
     </div>
     </div>
+      </m.div>
+    </>
   )
 }
 

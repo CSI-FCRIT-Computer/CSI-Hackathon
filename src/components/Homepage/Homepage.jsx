@@ -92,7 +92,7 @@ const Homepage = () => {
         </button>
       </div>
       <div className="other">
-        <Link to="/ps">Other</Link>
+        <Link to="/prize">Prize & Contact</Link>
       </div>
       <div className="sound">
         <button className="sound-btn" onClick={toggleAudio}>

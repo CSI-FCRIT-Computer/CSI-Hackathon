@@ -1,17 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kameron&family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Skranji:wght@700&family=Sura:wght@700&family=Syne:wght@600&family=Tapestry&display=swap');
 
-.prize-container{
-    
-    background-image: url("blending\ 1701768678184.png");
-    backdrop-filter: blur(50px);
-    background-size: contain;
-}
 .prize{
     padding: 0 5vw;
     position: relative; 
     background: #03041f;
-    
     color: white;
     
 }
@@ -25,6 +18,11 @@
 .img-container{
     position: relative;
     display: inline-block;
+}
+
+.img-container img{
+    align-self: center;
+    width: 98%;
 }
 
 .text-overlay1 {
@@ -110,7 +108,7 @@
     margin-bottom: 3vh;
     font-family: sura;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .platinum{
@@ -226,4 +224,29 @@
     padding: 3vh;
 }
 
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
 
+.close-btn{
+    width: 100%;
+    margin-top: 3%;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #03041f;
+    border: 2px solid #C0C0C0;
+    border-bottom: 0;
+}
+
+@media (max-width: 480px){
+    .prize-txt{
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-14%,0%);
+    font-family: syne;
+    font-weight: 600;
+    font-size: 2rem;
+    }
+}
