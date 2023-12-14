@@ -62,7 +62,7 @@ const Timeline = () => {
         
         <div className="close-div">
           <button className="close" onClick={handleButtonClick}>
-            close
+            <i class="fas fa-times"></i><span> close</span>
           </button>
         </div>
 

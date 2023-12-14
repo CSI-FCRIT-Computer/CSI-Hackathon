@@ -13,7 +13,7 @@
     font-size: 56px;
     color: #fff;
     position: absolute;
-    right: calc(100% - 150px);
+    right: 90%;
     height: 100%;
     text-align: center;
     writing-mode: vertical-rl;
@@ -64,7 +64,7 @@
     top: 50%;
     background: #FFF;
     content: "";
-    z-index: -1;
+    z-index: 0;
   }
   .timeline-content:after {
     position: absolute;
@@ -75,7 +75,7 @@
     transform: translateY(-100%);
     background: #FFF;
     content: "";
-    z-index: -1;
+    z-index: 0;
     /* border: 2px solid red; */
   }
   .timeline-icon{
@@ -92,6 +92,7 @@
     border-radius: 50%;
     border: 4px solid #fff;
     background-color: red;
+    z-index: 11;
   }
   .timeline-info{
     color: #FFF;
@@ -151,3 +152,77 @@
     color: #7b8085;
   }
   
+  @media (max-width: 924px){
+    h1.timeline-title{
+      height: unset;
+      right: unset;
+      transform: rotate(0deg);
+      writing-mode: horizontal-tb;
+      width: 100%;
+    }
+    .timeline-container{
+      top: 10%;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      /* border: 2px solid red; */
+    }
+    .day{
+      height: 100%;
+      flex-direction: column;
+      border-right: unset;
+      border-left: unset;
+      border-top: 5px solid white;
+      padding: 10px 0;
+      position: relative;
+      background-color: black;
+      /* border: 2px solid red; */
+    }
+    h2.title-day{
+      display: none;
+    }
+    .timeline-content{
+      height: 200px;
+    }
+    .timeline-content:before{
+      rotate: 90deg;
+      top: 20%;
+    }
+    .timeline-content:after {
+      rotate: -90deg;
+      top: 0%;
+      left: 75%;
+    }
+    .timeline-icon{
+      top: 50%;
+      left: 0%;
+    }
+    .timeline-info{
+      top: 25%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+    }
+    .timeline-period{
+      padding: 10px 0;
+    }
+    .timeline-content:nth-child(odd) {
+      .timeline-icon {
+        background-color: blue;
+        top: 50%;
+        left: 100%;
+      }
+      .timeline-info{
+        bottom: 50%;
+        transform: translate(-125%, -75%);
+      }
+    }
+    .close-div {
+      bottom: 92%;
+      right: 10px;
+      width: unset;
+      font-size: 24px;
+    }
+    .close>span{
+      display: none;
+    }
+  }
