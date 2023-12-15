@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import Contact from './Contact'
+import FAQ from './FAQ.jsx';
+import faq from './FAQ.json';
+
 import "./Prize.css"
 import SponsorsCard from './SponsorsCard'
 import prizeImg from "./Rectangle 24.svg"
@@ -96,6 +99,14 @@ function Prize() {
               ))}
           </div>
         </div>
+      </div>
+      </div>
+      <div className='m-5'>
+      <h2>FAQ's</h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+      {faq.map((item) =>(
+        <FAQ Q={item.ques} A={item.ans} id={item.id}/>
+      ))}
       </div>
       </div>
       <div className="contact">

@@ -238,13 +238,30 @@
     border: 2px solid #C0C0C0;
     border-bottom: 0;
 }
+.accordion{
+    background-color: #03041f;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+.accordion-item{
+    background-color: #03041f;
+    color: #ffffff;
+    
+}
 
-@media (max-width: 480px){
+.accordion-item button{
+    background-color: #03041f;
+    color: #ffffff;
+}
+
+
+@media (max-width: 580px){
     .prize-txt{
-    position: relative;
     z-index: 1;
-    left: 50%;
-    transform: translate(-14%,0%);
+    left: 36%;
+    top: 0%;
+    transform: translate(0%,0%);
     font-family: syne;
     font-weight: 600;
     font-size: 2rem;
