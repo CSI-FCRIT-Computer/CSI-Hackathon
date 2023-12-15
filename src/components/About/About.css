@@ -48,7 +48,7 @@
 }
 
 .About .about-agnethon h1{
-  padding-top: 5vh;
+  padding-top: 2vh;
 }
 
 
@@ -137,6 +137,9 @@
   .About .about-us-text p{
     font-size:18px;
   }
+  .About .about-agnethon p{
+    font-size: 18px;
+  }
 }
 /* for about csi comp */
 .About .csi-grid .csi-comp-head{
@@ -158,6 +161,7 @@
   transform: translateX(-120%) skewX(45deg);
   transition: transform 1s ease-in-out;
   overflow-x: hidden;
+  
 }
 .About .csi-grid .scale-in .comp-text{
   transform:translateX(0) skewX(0deg);
@@ -196,6 +200,7 @@
   padding-top:5vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  /* text-align: justify; */
 }
 
 .About .csi-grid .scaling-component .it-text{

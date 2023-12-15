@@ -39,8 +39,7 @@ const CsiGrid=()=>{
     
         const itText=`Welcome to the Computer Society of India (CSI), a hub where technology converges with
         innovation and excellence. Committed to fostering collaboration and knowledge-sharing,
-        CSI empowers individuals through continuous learning and skill development. With a legacy
-        spanning [insert years], CSI has been a driving force in technological advancements,
+        CSI empowers individuals through continuous learning and skill development, CSI has been a driving force in technological advancements,
         evident in groundbreaking projects and cutting-edge research showcased at our events.`
 
 
