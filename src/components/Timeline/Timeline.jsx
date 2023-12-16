@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { motion as m } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "./Timeline.css";
-const Achievements = () => {
+import timeline from "./timeline.json";
+
+const day1 = timeline.filter(timestamp => timestamp.dd === "1");
+const day2 = timeline.filter(timestamp => timestamp.dd === "2");
+
+const Timeline = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
 
@@ -13,73 +18,58 @@ const Achievements = () => {
     }, 700);
   };
   return (
-    <div className="container">
+    <div className="main">
       <m.div
-        initial={{ x: "-100%" }}
-        animate={{ x: closed ? "-100%" : "0%" }}
+        initial={{ x: "100%" }}
+        animate={{ x: closed ? "100%" : "0%" }}
         exit={{ x: "-100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
-        style={{ background: "#eee", height: "100vh" }}
+        style={{ background: "black", height: "100vh" }}
         className="background"
       >
-        <div className="content">
-          <h3>
-            Lorem Ipsum
-            {/* <div class="message">
-              <div class="word1">close</div>
-              <div class="word2">code</div>
-              <div class="word3">creating</div>
-            </div> */}
-          </h3>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat'
-             nulla pariatur. Excepteur sint occaecat cupidatat non 
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div className="social-a">
-            <button className="social-icons">
-              <span className="label-up">twitter</span>
-              <span className="label-up">twitter</span>
-            </button>
-            <span>/</span>
-            <button className="social-icons">
-              <span className="label-up">linkedin</span>
-              <span className="label-up">linkedin</span>
-            </button>
-            <span>/</span>
-            <button className="social-icons">
-              <span className="label-up">github</span>
-              <span className="label-up">github</span>
-            </button>
+
+        <h1 className="timeline-title">Timeline</h1>
+
+        <div className="timeline-container">
+          
+          <div className="day">
+            <h2 className="title-day">Day 1</h2>
+            {day1.map((timestamp)=>(
+                <div className="timeline-content">
+                  <div className="timeline-icon"><i class={timestamp.icon}></i></div>
+                  <div className="timeline-info">
+                    <div className="timeline-period">{timestamp.dt}</div>
+                    <div className="timeline-event">{timestamp.event}</div>
+                  </div>
+                </div>
+            ))}
           </div>
-          <div className="interests">
-            Interests
-            <ul>
-              <li>Open Source Developer</li>
-              <li>Web Design & Developer</li>
-              <li>Competitive Programmer</li>
-              <li>UI & UX Designer</li>
-              <li>Game Developer</li>
-            </ul>
-          </div>
-          <div className="contact">
-            <div className="contact1">Want to contact me?</div>
-            <div className="contact2">
-              Send me email over at <span>diassavio629@gmail.com</span>
-            </div>
-          </div>
-          <div className="close-div">
-            <button className="close" onClick={handleButtonClick}>
-              close
-            </button>
+          
+          <div className="day">
+            <h2 className="title-day">Day 2</h2>
+            {day2.map((timestamp)=>(
+                <div className="timeline-content">
+                  <div className="timeline-icon"><i class={timestamp.icon}></i></div>
+                  <div className="timeline-info">
+                    <div className="timeline-period">{timestamp.dt}</div>
+                    <div className="timeline-event">{timestamp.event}</div>
+                  </div>
+                </div>
+            ))}
           </div>
         </div>
+        
+        
+        <div className="close-div">
+          <button className="close" onClick={handleButtonClick}>
+            <i class="fas fa-times"></i><span> close</span>
+          </button>
+        </div>
+
+
       </m.div>
     </div>
   );
 };
 
-export default Achievements;
+export default Timeline;

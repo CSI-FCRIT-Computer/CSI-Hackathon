@@ -61,9 +61,16 @@ body {
 
 .about-navigator button{
   font-weight: bolder;
+  letter-spacing: 2px;
   background: none;
   border: none;
   cursor: pointer;
+  transition: 0.35s ease;
+}
+.about button a, 
+.contact-us button a, 
+.problem-statements button a, 
+.timeline button a{
   color: #7b8085;
   transition: transform 0.35s ease;
 }
@@ -72,10 +79,40 @@ body {
   color: inherit;
   text-decoration: none;
 }
-.about-navigator button:hover {
-  transform: translateY(-5px);
-  color: #d9e1e9;
+
+.problem-statements button:hover, 
+.timeline button:hover{
+  scale: 1.1;
+  transform: translateX(5px);
 }
+.about button:hover{
+  scale: 1.1;
+  transform: translateY(5px);
+} 
+.contact-us button:hover{
+  scale: 1.1;
+  transform: translateY(-5px);
+}
+
+
+.about {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.contact-us {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 .switch {
   padding: 15px;
   position: absolute;
@@ -163,10 +200,25 @@ body {
   /* top: 50%; */
   bottom: 46%;
   right: 0;
-  margin: 10px;
+  height: 100%;
+  text-align: center;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  transition: .5s ease;
 }
+
+.problem-statements {
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+  transition: .5s ease;
+}
+
 
 .social {
   padding-left: 15px;
@@ -195,7 +247,6 @@ body {
   height: 60px;
   font-weight: bold;
 }
-
 .social-icons:hover {
   color: #d9e1e9;
 }

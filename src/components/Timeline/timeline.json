@@ -1,0 +1,68 @@
+[
+    {
+        "dd": "1",
+        "dt": "8:00 AM",
+        "event": "Check In",
+        "icon": "fas fa-map-marker-alt"
+    },
+    {
+        "dd": "1",
+        "dt": "9:00 AM",
+        "event": "Inauguration",
+        "icon": "far fa-thumbs-up"
+    },
+    {
+        "dd": "1",
+        "dt": "10:00 AM",
+        "event": "Start Coding",
+        "icon": "fas fa-code"
+    },
+    {
+        "dd": "1",
+        "dt": "1:30 PM",
+        "event": "Lunch",
+        "icon": "fas fa-utensils"
+    },
+    {
+        "dd": "1",
+        "dt": "5:00 PM",
+        "event": "Eval 1",
+        "icon": "fas fa-user-check"
+    },
+    {
+        "dd": "1",
+        "dt": "8:00 PM",
+        "event": "Dinner",
+        "icon": "fas fa-pizza-slice"
+    },
+    {
+        "dd": "2",
+        "dt": "8:00 AM",
+        "event": "Check In",
+        "icon": "fas fa-map-marker-alt"
+    },
+    {
+        "dd": "2",
+        "dt": "9:00 AM",
+        "event": "Resume Coding",
+        "icon": "fas fa-code"
+    },
+    {
+        "dd": "2",
+        "dt": "1:30 PM",
+        "event": "Lunch",
+        "icon": "fas fa-utensils"
+    },
+    {
+        "dd": "2",
+        "dt": "5:00 PM",
+        "event": "Eval 2",
+        "icon": "fas fa-user-check"
+    },
+    {
+        "dd": "2",
+        "dt": "8:00 PM",
+        "event": "Dinner",
+        "icon": "fas fa-pizza-slice"
+    }
+]
