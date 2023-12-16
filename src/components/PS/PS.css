@@ -25,7 +25,6 @@ h1.ps-title{
   display: flex;
   flex-direction: row-reverse;
   overflow-x: auto;
-  /* border: 2px solid red; */
 }
 .container{
   height: 100%;
@@ -36,7 +35,6 @@ h1.ps-title{
   justify-content: center;
   position: sticky;
   right: 0;
-  /* border: 2px solid red; */
 }
 .card{
   display: flex;
@@ -61,7 +59,6 @@ h1.ps-title{
   align-items: center;
   height: 100%;
   width: 100%;
-  /* border: 2px solid red; */
 }
 .statement{
   margin: 25px 50px;
