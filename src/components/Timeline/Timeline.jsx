@@ -24,7 +24,7 @@ const Timeline = () => {
         animate={{ x: closed ? "100%" : "0%" }}
         exit={{ x: "-100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
-        style={{ background: "black", height: "100vh" }}
+        style={{ background: "transparent", height: "100vh" }}
         className="background"
       >
 
