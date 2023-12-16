@@ -1,0 +1,40 @@
+.typewriter h1 {
+    overflow: hidden; 
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing-blink-backspace 9.25s steps(40, end) infinite;
+  }
+  @keyframes typing-blink-backspace {
+    0% {
+      width: 0; 
+      border-color: transparent; 
+    }
+    40%{
+      width: 100%; 
+      border-color: orange; 
+    }
+    50%{
+      width: 100%;
+      border-color: transparent; 
+    }
+    60% {
+      width: 100%; 
+      border-color: orange; 
+    }
+    70% {
+      width: 100%; 
+      border-color: transparent; 
+    }
+    /* 75% {
+      width: 100%; 
+      border-color: transparent; 
+    } 
+    */
+  
+    100% {
+      width: 0; 
+      border-color: orange; 
+  }
+}
