@@ -1,0 +1,230 @@
+::-webkit-scrollbar{
+  display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main{
+    background: transparent;
+  }
+  h1.timeline-title{
+    font-size: 56px;
+    color: #fff;
+    position: fixed;
+    right: 90%;
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    z-index: 2;
+  }
+  .timeline-container {
+    max-width: 90%;
+    height: 100%;
+    margin-left: auto;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    z-index: 111;
+  }
+  
+  .day{
+    position: sticky;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+  } 
+  h2.title-day{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .timeline-content {
+    width: 200px;
+    height: 100%;
+    position: relative;
+  }
+  .timeline-content:first-child{
+    margin-left: 0;
+  }
+  .timeline-content:last-child{
+    margin-right: 0;
+  }
+  .timeline-content:before {
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    top: 50%;
+    background: #FFF;
+    content: "";
+    z-index: 0;
+  }
+  .timeline-content:after {
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-100%);
+    background: #FFF;
+    content: "";
+    z-index: 0;
+    /* border: 2px solid red; */
+  }
+  .timeline-icon{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: red;
+    z-index: 11;
+  }
+  .timeline-info{
+    color: #FFF;
+    position: absolute;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .timeline-event{
+    text-align: center;
+  }
+  .timeline-period {
+    padding: 10px;
+    width: 100px;
+    text-align:center;
+  }
+
+
+  .timeline-content:nth-child(odd)::after{
+      transform: translateY(0%);
+  }
+  .timeline-content:nth-child(odd) {
+    .timeline-icon {
+      background-color: blue;
+      top: 70%;
+    }
+    .timeline-info{
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+
+
+  .close-div {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    z-index: 111111;
+    text-align: center;
+  }
+  .close {
+    color: rgb(151, 151, 151);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.35s ease;
+    font-weight: bold;
+  } 
+  .close:hover {
+    font-weight: bold;
+    transform: translateY(-5px);
+    color: #7b8085;
+  }
+  
+  @media (max-width: 924px){
+    h1.timeline-title{
+      height: unset;
+      right: unset;
+      transform: rotate(0deg);
+      writing-mode: horizontal-tb;
+      width: 100%;
+    }
+    .timeline-container{
+      top: 10%;
+      left: 0;
+      max-width: 100%;
+      height: 100%;
+      flex-direction: column;
+    }
+    .day{
+      height: 100%;
+      flex-direction: column;
+      border-right: unset;
+      border-left: unset;
+      border-top: 5px solid white;
+      padding: 10px 0;
+      position: relative;
+      background-color: black;
+    }
+    h2.title-day{
+      display: none;
+    }
+    .timeline-content{
+      height: 200px;
+    }
+    .timeline-content:before{
+      rotate: 90deg;
+      top: 20%;
+    }
+    .timeline-content:after {
+      rotate: -90deg;
+      top: 0%;
+      left: 75%;
+    }
+    .timeline-icon{
+      top: 50%;
+      left: 0%;
+    }
+    .timeline-info{
+      top: 25%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+    }
+    .timeline-period{
+      padding: 10px 0;
+    }
+    .timeline-content:nth-child(odd) {
+      .timeline-icon {
+        background-color: blue;
+        top: 50%;
+        left: 100%;
+      }
+      .timeline-info{
+        bottom: 50%;
+        transform: translate(-125%, -75%);
+      }
+    }
+    .close-div {
+      bottom: 92%;
+      right: 10px;
+      width: unset;
+      font-size: 24px;
+    }
+    .close>span{
+      display: none;
+    }
+  }
