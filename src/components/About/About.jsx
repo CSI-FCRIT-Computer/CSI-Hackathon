@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion as m } from "framer-motion";
+import { useScroll } from "framer-motion"
 import "./About.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
@@ -13,6 +14,8 @@ import Close from "./images/cancel_FILL0_wght400_GRAD0_opsz24.svg";
 
 const About = () => {
   const [closed, setClosed] = useState(false);
+  const { scrollYProgress } = useScroll();
+
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
@@ -22,6 +25,7 @@ const About = () => {
     }, 700);
   };
   return (
+    
     <div className="About about-container">
       <m.div
         initial={{ y: "-100vh" }}

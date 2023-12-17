@@ -14,6 +14,7 @@
     rgba(20, 22, 27, 1) 100%
   ); */
   background-image:url("./images/AboutTextBg.png");
+  background-color: #020213;
   height: max-content;
   width: 100vw;
   background-size: cover;
@@ -43,7 +44,13 @@
   z-index:2 !important;
   max-width:100vw;
   padding-top: 10vh !important;
+  padding-bottom: 10vh !important;
 }
+
+.About .about-agnethon h1{
+  padding-top: 2vh;
+}
+
 
 .About .clg-img{
   position:sticky;
@@ -62,6 +69,7 @@
 
 .About .about-us-text{
   background-image:url("./images/AboutTextBg.png");
+  background-color: #020213;
   position: sticky;
   z-index: 1;
   /* height:auto;
@@ -82,12 +90,26 @@
 }
 
 .About .about-us-text p{
-  text-align: center;
+  text-align: justify;
   font-size:24px;
   width: 60vw;
   margin: auto;
 
 }
+
+@media (max-width:850px){
+  .About .about-us-text p{
+    width: 80vw;
+  }
+  .About .about-us-text{
+    padding-bottom: 5vh;
+    padding-top:5vh;
+
+  }
+}
+
+
+
 
 
 .About .csi-grid{
@@ -115,6 +137,9 @@
   .About .about-us-text p{
     font-size:18px;
   }
+  .About .about-agnethon p{
+    font-size: 18px;
+  }
 }
 /* for about csi comp */
 .About .csi-grid .csi-comp-head{
@@ -133,9 +158,10 @@
 
 }
 .About .csi-grid .scaling-component .comp-text{
-  transform: translateX(-100%) skewX(60deg);
+  transform: translateX(-120%) skewX(45deg);
   transition: transform 1s ease-in-out;
   overflow-x: hidden;
+  
 }
 .About .csi-grid .scale-in .comp-text{
   transform:translateX(0) skewX(0deg);
@@ -174,9 +200,11 @@
   padding-top:5vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  /* text-align: justify; */
 }
+
 .About .csi-grid .scaling-component .it-text{
-  transform: translateX(100%) skewX(-60deg);
+  transform: translateX(120%) skewX(-50deg);
   transition: transform 1s ease-in-out;
   overflow-x: hidden;
 }
@@ -184,6 +212,43 @@
   transform:translateX(0) skewX(0deg);
 }
 
+@media (max-width:575px){
+  .About .csi-grid .csi-it-text,
+  .About .csi-grid .csi-it-pic img,
+  .About .csi-grid .csi-comp-text,
+  .About .csi-grid .csi-comp-pic img{
+    height: auto;
+  }
+  .About .csi-grid .csi-it-text{
+    padding-top:2vh;
+  }
+  .About .csi-grid .about-us-text p{
+    font-size: 20px;
+  }
+}
+@media (max-width:680px){
+  .About .csi-grid p{
+    padding-top: 0vh;
+    font-size: 13px;
+  }
+  .About .csi-grid .csi-comp-text{
+    padding-top: 0vh;
+  }
+  .About .csi-grid .csi-it-text{
+    padding-top: 2vh;
+  }
+}
+@media screen and (min-width:580px) and (max-width: 1000px) { 
+  .About .csi-grid .csi-comp-pic img{
+    height: 30vh;
+    border-bottom-left-radius: 20px;
+    margin-top: 10%;
+  }
+  .About .csi-grid .csi-comp-pic img{
+    max-height: 50vh;
+  }
+  /* STYLES HERE */
+}
 /* ScalingComponent.css for csi pictures*/
 .About .csi-grid .scaling-component img{
   transform: scale(0) rotate(45deg);
@@ -218,6 +283,8 @@
   align-items: center;
   text-align: center;
   background-image:url("./images/AboutTextBg.png");
+  background-color: #020213;
+
 }
 .About .close {
 
