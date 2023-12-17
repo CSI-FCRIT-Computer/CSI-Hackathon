@@ -113,7 +113,6 @@ h2.card-title{
   width: 100%;
   z-index: 111111;
   text-align: center;
-  /* border: 2px solid red; */
 }
 .close {
   color: rgb(151, 151, 151);
@@ -123,7 +122,6 @@ h2.card-title{
   cursor: pointer;
   transition: transform 0.35s ease;
   font-weight: bold;
-  /* border: 2px solid red; */
 } 
 .close:hover {
   font-weight: bold;
