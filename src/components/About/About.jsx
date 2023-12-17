@@ -5,7 +5,7 @@ import "./About.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import csilogo from "../assets/csilogo.png";
-import college from "./images/College.png";
+import college from "./images/clg.jpg";
 import AboutUsText from "./AboutUsText";
 import CsiGrid from "./CsiGrid";
 import AboutAgnethon from "./AboutAgnethon";
