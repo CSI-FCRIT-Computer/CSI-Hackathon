@@ -1,57 +1,67 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import "./PS.css";
-import img1 from "./proj/thumb1.jpg";
+import ps from "./ps.json";
 
-const cardsData = [
-  {
-    id: 1,
-    imageUrl: img1,
-    text: "Card 1",
-    type: "Website",
-    link: "https://example.com/card1"
-  },
-  {
-    id: 2,
-    imageUrl: "path-to-image-2",
-    text: "Card 2",
-    type: "Website",
-    link: "https://example.com/card2"
-  },
-  {
-    id: 3,
-    imageUrl: "path-to-image-2",
-    text: "Card 2",
-    type: "Website",
-    link: "https://example.com/card2"
-  },
-  {
-    id: 4,
-    imageUrl: "path-to-image-2",
-    text: "Card 2",
-    type: "Design",
-    link: "https://example.com/card2"
-  },
-  {
-    id: 5,
-    imageUrl: "path-to-image-2",
-    text: "Card 2",
-    type: "Design",
-    link: "https://example.com/card2"
-  },
-  {
-    id: 6,
-    imageUrl: "path-to-image-2",
-    text: "Card 2",
-    type: "Design",
-    link: "https://example.com/card2"
-  }
-];
+const web = ps.filter(statement => statement.title === "web");
+const blockchain = ps.filter(statement => statement.title === "blockchain");
+const cyber = ps.filter(statement => statement.title === "cyber");
 
-const Projects = () => {
+const PS = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
+  useEffect(() => {
+    const cards = document.querySelectorAll(".card");
+    const stackArea = document.querySelector(".stack-area");
+
+    if (!stackArea) {
+      // Check if stackArea is null
+      return;
+    }
+
+    function displaceCards() {
+      let x=-50;
+      cards.forEach((card) => {
+        if (card.classList.contains("active")) {
+          card.style.transform = `translate(100vw, -50%)`;
+        } else {
+          card.style.transform = `translate(${x}%, -50%)`;
+          x=x-10;
+        }
+      });
+    }
+
+    displaceCards();
+
+    const scrollHandler = () => {
+      if (!stackArea) {
+        return;
+      }
+
+      let proportion = stackArea.getBoundingClientRect().top / window.innerHeight;
+      if (proportion <= 0) {
+        let n = cards.length;
+        let index = Math.ceil((proportion * n) / 2);
+        index = Math.abs(index) - 1;
+        for (let i = 0; i < n; i++) {
+          if (i <= index) {
+            cards[i].classList.add("active");
+          } else {
+            cards[i].classList.remove("active");
+          }
+        }
+        displaceCards();
+      }
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   const handleButtonClick = () => {
     setClosed(true);
@@ -59,6 +69,8 @@ const Projects = () => {
       navigate("/");
     }, 900);
   };
+
+
   return (
     <div className="container">
       <m.div
@@ -66,73 +78,64 @@ const Projects = () => {
         animate={{ y: closed ? "100%" : "0%" }}
         exit={{ y: "-100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
-        style={{ background: "#eee", height: "120vh" }}
         className="background"
       >
-        {/* <m.div
-        initial={{ y: "-100%" }}
-        animate={{ y: closed ? "-100%" : "0%" }}
-        exit={{ y: "-100%" }}
-        transition={{ duration: 0.75, ease: "easeOut" }}
-        style={{ background: "#eee", height: "100vh" }}
-        className="background"
-      > */}
-        <div className="content1">
-          <div className="proj-info">
-            <h3>Problem Statements</h3>
-            <p>
-              Some of my recent work is showcased below, allowing you to explore
-              the projects and the techstack I used for each one.
-            </p>
-          </div>
-          <div className="card-container">
-            {cardsData.map((card) => (
-              <a key={card.id} href={card.link} className="card">
-                <div
-                  className="card-image"
-                  style={{ backgroundImage: `url(${card.imageUrl})` }}
-                ></div>
-                <div className="card-text">
-                  {card.text}
-                  <p>{card.type}</p>
+        
+        <h1 className="ps-title">Problem Statements</h1>
+
+        <div className="center">
+          <div className="stack-area">
+            <div className="right">
+              <div className="cards">
+
+                <div className="card">
+                  <h2 className="title">Web & App</h2>
+                {web.map((statement)=>(
+                  <div className="content">
+                    <p>
+                      {statement.ps}
+                    </p>
+                  </div>
+                ))}
                 </div>
-              </a>
-            ))}
+
+
+                <div className="card">
+                  <h2 className="title">Block-chain</h2>
+                {blockchain.map((statement)=>(
+                  <div className="content">
+                    <p>
+                      {statement.ps}
+                    </p>
+                  </div>
+                ))}
+                </div>
+
+
+                <div className="card">
+                  <h2 className="title">Cybersecurity</h2>
+                {cyber.map((statement)=>(
+                  <div className="content">
+                    <p>
+                      {statement.ps}
+                    </p>
+                  </div>
+                ))}
+                </div>
+
+              </div>
+            </div>
           </div>
-          <div className="am">
-            <h3>Evaluation criteria</h3>
-            <p>
-              Below is a snapshot of my notable achievements. These
-              accomplishments highlights my interest and showcase the skills in
-              the field of Web Development, Designing and Competitive
-              Programming.
-            </p>
-            <p>
-              • Secured 5th rank out of 2300+ contributors in Winter of Code 3.0
-              event organized by IIIT Kalyani.
-              <br />• Shortlisted as top 15 teams out of 60 teams in
-              Hackoverflow Hackathon organized by Pillai HOC College,Rasayni.
-              <br />• Shortlisted as top top 35 teams out of 600 teams in
-              Hackanova Hackathon organized by Thakur College of
-              Engineering,Kandivalli.
-              <br />• Achieved 2nd position in Bluesprint Hackathon out of 30
-              teams organized by Bluelearn.
-              <br />• Secured 3rd rank in Bug4ever Annual National Level
-              Flagship contest organized by Arena : Codechef SIES.(Team of 2)
-              <br />• Secured 2nd rank in Technoblitz Clash of Codes, State
-              level coding contest organized by CSI community.
-              <br />• Secured 1828 rank in Google Kickstart Round H.
-            </p>
-          </div>
-          <div className="close-div">
-            <button className="close" onClick={handleButtonClick}>
-              close
-            </button>
-          </div>
+        </div>
+
+        <div className="close-div">
+          <button className="close" onClick={handleButtonClick}>
+            <i class="fas fa-times"></i><span> close</span>
+          </button>
         </div>
       </m.div>
     </div>
   );
 };
 
-export default Projects;
+export default PS;
