@@ -247,14 +247,18 @@
 .accordion-item{
     background-color: #03041f;
     color: #ffffff;
-    
+    font-weight: 600;
 }
-
+.accordion-button{
+    font-weight: 600;
+}
 .accordion-item button{
     background-color: #03041f;
     color: #ffffff;
 }
-
+.accordion-button:not(.collapsed){
+    background-color:#C0C0C0;
+}
 
 @media (max-width: 580px){
     .prize-txt{
