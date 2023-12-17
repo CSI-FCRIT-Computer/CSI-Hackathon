@@ -20,21 +20,19 @@ const PS = () => {
       return;
     }
 
-    function rotateCards() {
-      let angle=0;
+    function displaceCards() {
       let x=-50;
       cards.forEach((card) => {
         if (card.classList.contains("active")) {
           card.style.transform = `translate(100vw, -50%)`;
         } else {
           card.style.transform = `translate(${x}%, -50%)`;
-          angle=angle-10;
           x=x-10;
         }
       });
     }
 
-    rotateCards();
+    displaceCards();
 
     const scrollHandler = () => {
       if (!stackArea) {
@@ -53,7 +51,7 @@ const PS = () => {
             cards[i].classList.remove("active");
           }
         }
-        rotateCards();
+        displaceCards();
       }
     };
 
