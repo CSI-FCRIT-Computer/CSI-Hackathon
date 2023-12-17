@@ -141,13 +141,13 @@ h2.card-title{
     width: 100%;
   }
   .card{
-    overflow-y: scroll;
     padding: 20px 0;
   }
   h2.card-title{
     font-size: 32px;
   }
   .card .content {
+    overflow-y: scroll;
     grid-template-columns: 100%;
     margin: 0;
   }
