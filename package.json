@@ -9,14 +9,18 @@
   "main": "src/index.js",
   "dependencies": {
     "@react-three/fiber": "8.12.0",
+    "bourbon": "^7.3.0",
+    "compass-mixins": "^0.12.12",
     "framer-motion": "10.9.1",
     "loader-utils": "3.2.1",
+    "node-sass": "^7.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.5.3",
     "react-router-dom": "6.12.1",
     "react-scripts": "^5.0.1",
     "react-scroll": "1.8.9",
+    "sass": "^1.69.5",
     "three": "^0.151.3"
   },
   "devDependencies": {

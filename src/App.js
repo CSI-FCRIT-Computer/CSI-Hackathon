@@ -7,6 +7,7 @@ import Contact from "./components/Contact/ContactUs";
 import Timeline from "./components/Timeline/Timeline";
 import LoadingScreen from "./components/Loading/Loading";
 import Prize from "./components/Prize/Prize";
+import Pagenotfound from "./components/Pagenotfound/pagenotfound";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +34,8 @@ const App = () => {
           <Route path="/ps" element={<PS />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/timeline" element={<Timeline />} />
-          <Route path="/prize" element={<Prize />}></Route>
+          <Route path="/prize" element={<Prize />}/>
+          <Route path="*" element={<Pagenotfound/>}/>
         </Routes>
       </BrowserRouter>
     </>

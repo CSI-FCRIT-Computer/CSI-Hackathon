@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+
+
+.container404{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #3498DB;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height:100vh;
+}
+
+.face404 {
+  font-size: 12vw;
+}
+.text404{
+  font-size: 2rem;
+}
+.text404 span {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.subtext404{
+  font-size: 1.5rem;
+}
+.subtext404 a:link,
+.subtext404 a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.subtext404 a:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #3498DB;
+  cursor: pointer;
+}
