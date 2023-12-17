@@ -5,7 +5,14 @@ body {
   overflow-x: hidden;
   font-family: montserrat, helvetica neue, helvetica, sans-serif;
 }
-
+.background-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  background: url('waves.png') center/contain no-repeat; 
+  z-index: 0; 
+}
 .homepage-container {
   color: #d9e1e9;
   background: url(bg.png) repeat 0 0;
@@ -82,6 +89,7 @@ body {
   top: 0;
   right: 0;
 }
+
 .title{
   position: absolute;
   left: 0;
@@ -97,10 +105,109 @@ body {
   flex-direction: column; 
 }
 .title .main-title{
+  z-index:1;
   font-size: 7vw;
+}
+.typewriter{
+  z-index:1;
 }
 .typewriter h1{
   font-size: 2.6vw;
+}
+.buttons-container {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px; 
+  flex-direction: column; 
+
+  @media (min-width: 578px) {
+    flex-direction: row; 
+  }
+}
+.glow-on-hover {
+  font-size:18px;
+  width: 220px;
+  height: 50px;
+  border-color: #939393;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+.glow-on-hover {
+  font-size: 16px;
+  width: 190px;
+   height: 43px;
+}
+.typewriter h1{
+  font-size: 2.8vw;
+}
+}
+@media (max-width: 899px) {
+  .glow-on-hover {
+    font-size: 12px;
+    width: 170px;
+    height: 40px;
+  }
+  .title{
+    top:10%;
+  }
+  .typewriter h1{
+    font-size: 3vw;
+  }
+  .background-container{
+    bottom:10%;
+  }
+}
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 /* @media (max-width: 1100px) {
   .title .main-title {
@@ -134,7 +241,7 @@ body {
   z-index: 1;
   position: relative;
   /* top: 35%; */
-  bottom: 63%;
+  bottom: 59%;
   writing-mode: vertical-rl;
   transform: rotate(0deg);
 }
