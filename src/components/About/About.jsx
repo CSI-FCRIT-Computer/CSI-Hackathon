@@ -59,7 +59,7 @@ const About = () => {
         </div>
 
 
-          <div className="close-div">
+          <div className="about-close-div">
             <button className="close" onClick={handleButtonClick}>
             <span class="material-symbols-outlined" >
             cancel

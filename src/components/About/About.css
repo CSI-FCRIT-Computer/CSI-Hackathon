@@ -284,7 +284,7 @@
 
 
 
-.About .close-div {
+.About .about-close-div {
   align-items: center;
   text-align: center;
   position:fixed;
@@ -292,6 +292,7 @@
   width: 100vw;
   background-image:url("./images/AboutTextBg.png");
   background-color: #020213;
+  bottom:0;
 
 }
 .About .close {
