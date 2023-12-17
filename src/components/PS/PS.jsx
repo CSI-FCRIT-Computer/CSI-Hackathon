@@ -15,8 +15,8 @@ const PS = () => {
     const cards = document.querySelectorAll(".card");
     const stackArea = document.querySelector(".stack-area");
 
+    // Check if stackArea is null
     if (!stackArea) {
-      // Check if stackArea is null
       return;
     }
 
@@ -24,7 +24,7 @@ const PS = () => {
       let x=-50;
       cards.forEach((card) => {
         if (card.classList.contains("active")) {
-          card.style.transform = `translate(100vw, -50%)`;
+          card.style.transform = `translate(100vw, -50%) scale(0.5)`;
         } else {
           card.style.transform = `translate(${x}%, -50%)`;
           x=x-10;
@@ -39,13 +39,16 @@ const PS = () => {
         return;
       }
 
-      let proportion = stackArea.getBoundingClientRect().top / window.innerHeight;
-      if (proportion <= 0) {
-        let n = cards.length;
-        let index = Math.ceil((proportion * n) / 2);
-        index = Math.abs(index) - 1;
+      const proportion = stackArea.getBoundingClientRect().top / window.innerHeight;
+      const threshold = window.innerWidth < 600 ? 0.5 : 0;
+
+      if (proportion <= threshold) {
+        const n = cards.length;
+        const index = Math.ceil((proportion * n) / 2);
+        const adjustedIndex = Math.abs(index) - 1;
+
         for (let i = 0; i < n; i++) {
-          if (i <= index) {
+          if (i <= adjustedIndex) {
             cards[i].classList.add("active");
           } else {
             cards[i].classList.remove("active");
@@ -80,58 +83,59 @@ const PS = () => {
         transition={{ duration: 0.75, ease: "easeOut" }}
         className="background"
       >
-        
-        <h1 className="ps-title">Problem Statements</h1>
+        <div className="elements">
+          <h1 className="ps-title">Problem Statements</h1>
+
+          <div className="close-div">
+            <button className="close" onClick={handleButtonClick}>
+              <i class="fas fa-times"></i><span> close</span>
+            </button>
+          </div>
+        </div>
+
 
         <div className="center">
           <div className="stack-area">
             <div className="right">
               <div className="cards">
 
+
                 <div className="card">
-                  <h2 className="title">Web & App</h2>
-                {web.map((statement)=>(
+                  <h2 className="card-title">Web & App</h2>
                   <div className="content">
+                  {web.map((statement)=>(
                     <p>
                       {statement.ps}
                     </p>
+                  ))}
                   </div>
-                ))}
                 </div>
 
-
                 <div className="card">
-                  <h2 className="title">Block-chain</h2>
-                {blockchain.map((statement)=>(
+                  <h2 className="card-title">BlockChain</h2>
                   <div className="content">
+                  {blockchain.map((statement)=>(
                     <p>
                       {statement.ps}
                     </p>
+                  ))}
                   </div>
-                ))}
                 </div>
 
-
                 <div className="card">
-                  <h2 className="title">Cybersecurity</h2>
-                {cyber.map((statement)=>(
+                  <h2 className="card-title">Cybersecurity</h2>
                   <div className="content">
+                  {cyber.map((statement)=>(
                     <p>
                       {statement.ps}
                     </p>
+                  ))}
                   </div>
-                ))}
                 </div>
 
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="close-div">
-          <button className="close" onClick={handleButtonClick}>
-            <i class="fas fa-times"></i><span> close</span>
-          </button>
         </div>
       </m.div>
     </div>
