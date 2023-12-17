@@ -74,9 +74,9 @@ const PS = () => {
   return (
     <div className="container">
       <m.div
-        initial={{ y: "100%" }}
-        animate={{ y: closed ? "100%" : "0%" }}
-        exit={{ y: "-100%" }}
+        initial={{ x: "-100%" }}
+        animate={{ x: closed ? "-100%" : "0%" }}
+        exit={{ x: "100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         className="background"
       >
