@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion as m } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "./Timeline.css";
@@ -10,6 +10,21 @@ const day2 = timeline.filter(timestamp => timestamp.dd === "2");
 const Timeline = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
+  const containerRef = useRef(null);
+
+  const handleWheel = (e) => {
+    const container = containerRef.current;
+
+    if (container) {
+      if (e.deltaY > 0) {
+        container.scrollLeft += 100;
+        e.preventDefault();
+      } else {
+        container.scrollLeft -= 100;
+        e.preventDefault();
+      }
+    }
+  };
 
   const handleButtonClick = () => {
     setClosed(true);
@@ -17,6 +32,7 @@ const Timeline = () => {
       navigate("/");
     }, 700);
   };
+
   return (
     <div className="main">
       <m.div
@@ -27,46 +43,51 @@ const Timeline = () => {
         style={{ background: "transparent", height: "100vh" }}
         className="background"
       >
-
         <h1 className="timeline-title">Timeline</h1>
 
-        <div className="timeline-container">
-          
+        <div
+          className="timeline-container"
+          ref={containerRef}
+          onWheel={handleWheel}
+          style={{ overflowX: 'auto', whiteSpace: 'nowrap', width: '100%' }}
+        >
           <div className="day">
             <h2 className="title-day">Day 1</h2>
-            {day1.map((timestamp)=>(
-                <div className="timeline-content">
-                  <div className="timeline-icon"><i class={timestamp.icon}></i></div>
-                  <div className="timeline-info">
-                    <div className="timeline-period">{timestamp.dt}</div>
-                    <div className="timeline-event">{timestamp.event}</div>
-                  </div>
+            {day1.map((timestamp) => (
+              <div className="timeline-content" key={timestamp.id}>
+                <div className="timeline-icon">
+                  <i className={timestamp.icon}></i>
                 </div>
+                <div className="timeline-info">
+                  <div className="timeline-period">{timestamp.dt}</div>
+                  <div className="timeline-event">{timestamp.event}</div>
+                </div>
+              </div>
             ))}
           </div>
-          
+
           <div className="day">
             <h2 className="title-day">Day 2</h2>
-            {day2.map((timestamp)=>(
-                <div className="timeline-content">
-                  <div className="timeline-icon"><i class={timestamp.icon}></i></div>
-                  <div className="timeline-info">
-                    <div className="timeline-period">{timestamp.dt}</div>
-                    <div className="timeline-event">{timestamp.event}</div>
-                  </div>
+            {day2.map((timestamp) => (
+              <div className="timeline-content" key={timestamp.id}>
+                <div className="timeline-icon">
+                  <i className={timestamp.icon}></i>
                 </div>
+                <div className="timeline-info">
+                  <div className="timeline-period">{timestamp.dt}</div>
+                  <div className="timeline-event">{timestamp.event}</div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
-        
-        
+
         <div className="close-div">
           <button className="close" onClick={handleButtonClick}>
-            <i class="fas fa-times"></i><span> close</span>
+            <i className="fas fa-times"></i>
+            <span> close</span>
           </button>
         </div>
-
-
       </m.div>
     </div>
   );
