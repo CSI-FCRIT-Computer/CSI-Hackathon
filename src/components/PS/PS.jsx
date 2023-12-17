@@ -84,7 +84,7 @@ const PS = () => {
         className="background"
       >
         <div className="elements">
-          <h1 className="ps-title">Problem Statements</h1>
+          <h1 className="ps-title">Track & PS</h1>
 
           <div className="close-div">
             <button className="close" onClick={handleButtonClick}>
