@@ -65,7 +65,7 @@ const Homepage = () => {
       </div>
       <div className="ps">
         <button>
-          <Link to="/contact">Track & PS</Link>
+          <Link to="/ps">Track & PS</Link>
         </button>
       </div>
       <div className="title">
