@@ -64,7 +64,7 @@ const Homepage = () => {
       </div>
       <div className="ps">
         <button>
-          <Link to="/contact">Problem Statement</Link>
+          <Link to="/ps">Problem Statement</Link>
         </button>
       </div>
       <div className="title">
