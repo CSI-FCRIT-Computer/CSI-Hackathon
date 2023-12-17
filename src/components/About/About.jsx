@@ -60,7 +60,7 @@ const About = () => {
 
 
           <div className="about-close-div">
-            <button className="close" onClick={handleButtonClick}>
+            <button className="about-close" onClick={handleButtonClick}>
             <span class="material-symbols-outlined" >
             cancel
             </span>
