@@ -17,10 +17,10 @@ const Timeline = () => {
 
     if (container) {
       if (e.deltaY > 0) {
-        container.scrollLeft += 100;
+        container.scrollLeft += 50;
         e.preventDefault();
       } else {
-        container.scrollLeft -= 100;
+        container.scrollLeft -= 50;
         e.preventDefault();
       }
     }
