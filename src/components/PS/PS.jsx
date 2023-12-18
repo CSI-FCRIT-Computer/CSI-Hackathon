@@ -72,7 +72,7 @@ const PS = () => {
 
 
   return (
-    <div className="container">
+    <div className="container-ps">
       <m.div
         initial={{ x: "-100%" }}
         animate={{ x: closed ? "-100%" : "0%" }}
