@@ -8,7 +8,7 @@ import Timeline from "./components/Timeline/Timeline";
 import LoadingScreen from "./components/Loading/Loading";
 import Prize from "./components/Prize/Prize";
 import Pagenotfound from "./components/Pagenotfound/pagenotfound";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
