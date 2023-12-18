@@ -156,11 +156,11 @@ h2.card-title{
     padding: 10px;
   }
   .close-div {
-    bottom: 100%;
+    bottom: unset;
+    top: 10px;
     right: 10px;
     width: unset;
     font-size: 24px;
-    border: 2px solid red;
   }
   .close>span{
     display: none;
