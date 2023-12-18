@@ -9,6 +9,7 @@ import soundoff from "../assets/icon-sound-off.png";
 import soundon from "../assets/icon-sound-on.png";
 import bgsound from "../assets/bg-sound.mp3";
 import { Link } from "react-router-dom";
+import waves from "./waves.png";
 const Homepage = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -64,13 +65,20 @@ const Homepage = () => {
       </div>
       <div className="ps">
         <button>
-          <Link to="/ps">Problem Statement</Link>
+          <Link to="/ps">Track & PS</Link>
         </button>
       </div>
       <div className="title">
+      <div className="background-container">
+        {/* <img src={waves} alt="waves"/> */}
+      </div>
         <div className="main-title">AGNETHON</div>
         <Typewriter className="tw">Code.Collaborate.Conquer</Typewriter>
-      </div>
+        <div className="buttons-container">
+          <button className="glow-on-hover" type="button">Register on Devfolio</button>
+          <button className="glow-on-hover" type="button">Download Brochure</button>
+        </div>
+        </div>
       <div className="timeline">
         <button>
           <Link to="/timeline">Timeline</Link>
