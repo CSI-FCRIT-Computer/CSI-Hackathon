@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import "./PS.css";
@@ -11,57 +11,7 @@ const cyber = ps.filter(statement => statement.title === "cyber");
 const PS = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
-  useEffect(() => {
-    const cards = document.querySelectorAll(".card");
-    const stackArea = document.querySelector(".stack-area");
 
-    if (!stackArea) {
-      // Check if stackArea is null
-      return;
-    }
-
-    function displaceCards() {
-      let x=-50;
-      cards.forEach((card) => {
-        if (card.classList.contains("active")) {
-          card.style.transform = `translate(100vw, -50%)`;
-        } else {
-          card.style.transform = `translate(${x}%, -50%)`;
-          x=x-10;
-        }
-      });
-    }
-
-    displaceCards();
-
-    const scrollHandler = () => {
-      if (!stackArea) {
-        return;
-      }
-
-      let proportion = stackArea.getBoundingClientRect().top / window.innerHeight;
-      if (proportion <= 0) {
-        let n = cards.length;
-        let index = Math.ceil((proportion * n) / 2);
-        index = Math.abs(index) - 1;
-        for (let i = 0; i < n; i++) {
-          if (i <= index) {
-            cards[i].classList.add("active");
-          } else {
-            cards[i].classList.remove("active");
-          }
-        }
-        displaceCards();
-      }
-    };
-
-    window.addEventListener("scroll", scrollHandler);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
 
   const handleButtonClick = () => {
     setClosed(true);
@@ -69,8 +19,7 @@ const PS = () => {
       navigate("/");
     }, 900);
   };
-
-
+  
   return (
     <div className="container-ps">
       <m.div
@@ -83,9 +32,6 @@ const PS = () => {
         
         <h1 className="ps-title">Problem Statements</h1>
 
-        <div className="center">
-          <div className="stack-area">
-            <div className="right">
               <div className="cards">
 
                 <div className="card">
@@ -112,7 +58,7 @@ const PS = () => {
                 </div>
 
 
-                <div className="card">
+                <div className="card" style={{'marginLeft':"5vw"}}>
                   <h2 className="title">Cybersecurity</h2>
                 {cyber.map((statement)=>(
                   <div className="content">
@@ -124,9 +70,6 @@ const PS = () => {
                 </div>
 
               </div>
-            </div>
-          </div>
-        </div>
 
         <div className="close-div">
           <button className="close" onClick={handleButtonClick}>
