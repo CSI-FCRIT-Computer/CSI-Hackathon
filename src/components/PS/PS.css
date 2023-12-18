@@ -1,62 +1,46 @@
+::-webkit-scrollbar{
+  display: none;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .container{
-  position: relative;
-}  
-.elements{
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 11111;
+  background-image:url("../About/images/AboutTextBg.png");
+  background-color: #020213;
+  height: max-content;
+  max-width: 100%;
+  background-size: cover; 
 }
 h1.ps-title{
-  font-size: 96px;
-  font-family: Kameron;
-  font-weight: 700;
+  font-size: 56px;
+  color: #fff;
   position: fixed;
-  left: 100%;
-  height: 100vh;
+  left: 90%;
+  height: 100%;
   text-align: center;
   writing-mode: vertical-lr;
+  transform: rotate(0deg);
   z-index: 2;
+  font-family: 'Syne', sans-serif;
+  text-decoration: underline;
 }
-.center {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.stack-area {
-  width: 100%;
-  height: 300vh;
-  position: relative;
-}
-.right{
+.cards {
+  max-width: 89%;
   height: 100vh;
+  margin-right: auto;
+  position: relative;
+  overflow: auto;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  box-sizing: border-box;
-  flex-basis: 50%;
-}
-.cards {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  z-index: 111;
 }
 .card {
   font-family: Kameron;
-  width: 100%;
+  min-width: 80vw;
+  margin-left: 20vw;
   height: 80%;
   box-sizing: border-box;
   padding: 35px;
@@ -64,33 +48,21 @@ h1.ps-title{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; 
 }
-
-.card:nth-child(1) {
-  z-index: 4;
-}
-.card:nth-child(2) {  
-  z-index: 3;
-}
-.card:nth-child(3) {
-  z-index: 2;
-}
-.card:nth-child(4) {
-  z-index: 1;
+.card:last-child{
+  margin-left: 7vw;
 }
 
 h2.card-title{
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 700;
   text-align: center;
 }
 .card .content {
   font-size: 16px;
   height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 10px;
@@ -108,9 +80,8 @@ h2.card-title{
 }
 
 
-
 .close-div {
-  position: sticky;
+  position: absolute;
   bottom: 50px;
   width: 100%;
   z-index: 111111;
@@ -118,7 +89,6 @@ h2.card-title{
 }
 .close {
   color: rgb(151, 151, 151);
-  position: fixed;
   background: none;
   border: none;
   cursor: pointer;
@@ -136,12 +106,18 @@ h2.card-title{
   h1.ps-title{
     height: unset;
     left: unset;
-    font-size: 48px;
+    font-size: 40px;
     writing-mode: horizontal-tb;
     width: 100%;
   }
+  .cards{
+    max-width: 100%;
+  }
   .card{
     padding: 20px 0;
+    min-width: calc(100vw - 60px);
+    margin-left: unset;
+    margin: 0 20px;
   }
   h2.card-title{
     font-size: 32px;
