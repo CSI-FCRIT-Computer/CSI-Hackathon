@@ -5,7 +5,7 @@ import "./PS.css";
 import ps from "./ps.json";
 
 const web = ps.filter(statement => statement.title === "web");
-const blockchain = ps.filter(statement => statement.title === "blockchain");
+const ai = ps.filter(statement => statement.title === "ai");
 const cyber = ps.filter(statement => statement.title === "cyber");
 
 const PS = () => {
@@ -65,9 +65,9 @@ const PS = () => {
                 </div>
 
                 <div className="section">
-                  <h2 className="section-title">BlockChain</h2>
+                  <h2 className="section-title">AI/ML</h2>
                   <div className="content">
-                  {blockchain.map((statement)=>(
+                  {ai.map((statement)=>(
                     <span>
                       {statement.ps}
                     </span>

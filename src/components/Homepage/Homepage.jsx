@@ -4,6 +4,7 @@ import csilogo from "../assets/csilogo.png";
 import Typewriter from './typewriter/typewriter.js';
 import { motion as m } from "framer-motion";
 import logo from "../assets/logo.png";
+import up from "./up.gif"
 import toggle from "../assets/toggle.png";
 import soundoff from "../assets/icon-sound-off.png";
 import soundon from "../assets/icon-sound-on.png";
@@ -11,30 +12,30 @@ import bgsound from "../assets/bg-sound.mp3";
 import { Link } from "react-router-dom";
 import waves from "./waves.png";
 const Homepage = () => {
-  const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  // const audioRef = useRef(null);
+  // const [isPlaying, setIsPlaying] = useState(false);
 
-  const toggleAudio = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-  useEffect(() => {
-    audioRef.current.volume = 0.075;
-    audioRef.current.addEventListener("ended", handleAudioEnded);
+  // const toggleAudio = () => {
+  //   if (isPlaying) {
+  //     audioRef.current.pause();
+  //   } else {
+  //     audioRef.current.play();
+  //   }
+  //   setIsPlaying(!isPlaying);
+  // };
+  // useEffect(() => {
+  //   audioRef.current.volume = 0.075;
+  //   audioRef.current.addEventListener("ended", handleAudioEnded);
 
-    // return () => {
-    //   audioRef.current.removeEventListener("ended", handleAudioEnded);
-    // };
-  }, []);
+  //   // return () => {
+  //   //   audioRef.current.removeEventListener("ended", handleAudioEnded);
+  //   // };
+  // }, []);
 
-  const handleAudioEnded = () => {
-    audioRef.current.currentTime = 0;
-    audioRef.current.play();
-  };
+  // const handleAudioEnded = () => {
+  //   audioRef.current.currentTime = 0;
+  //   audioRef.current.play();
+  // };
 
   return (
     <div className="homepage-container">
@@ -88,7 +89,7 @@ const Homepage = () => {
         {/* <img src={logo} width="50" alt="mainimg" /> */}
         {/* <frame /> */}
       </div>
-      <div className="social">
+      {/* <div className="social">
         <button className="social-icons">
           <span className="label-up">CSI-COMP</span>
           <span className="label-up">CSI-COMP</span>
@@ -98,16 +99,17 @@ const Homepage = () => {
           <span className="label-up">CSI-IT</span>
           <span className="label-up">CSI-IT</span>
         </button>
-      </div>
+      </div> */}
       <div className="other">
-        <Link to="/prize">Prize & Contact</Link>
+     
+        <Link to="/prize"> <img src={up} alt="other"  style={{ transform: 'rotate(180deg)' }}/></Link>
       </div>
-      <div className="sound">
+      {/* <div className="sound">
         <button className="sound-btn" onClick={toggleAudio}>
           <img src={isPlaying ? soundon : soundoff} alt="Sound Toggle" />
         </button>
         <audio ref={audioRef} src={bgsound} />
-      </div>
+      </div> */}
     </div>
   );
 };
