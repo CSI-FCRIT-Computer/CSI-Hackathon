@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import "./PS.css";
@@ -11,68 +11,32 @@ const cyber = ps.filter(statement => statement.title === "cyber");
 const PS = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
-  useEffect(() => {
-    const cards = document.querySelectorAll(".card");
-    const stackArea = document.querySelector(".stack-area");
+  const containerRef = useRef(null);
 
-    if (!stackArea) {
-      // Check if stackArea is null
-      return;
-    }
+  const handleWheel = (e) => {
+    const container = containerRef.current;
 
-    function displaceCards() {
-      let x=-50;
-      cards.forEach((card) => {
-        if (card.classList.contains("active")) {
-          card.style.transform = `translate(100vw, -50%)`;
-        } else {
-          card.style.transform = `translate(${x}%, -50%)`;
-          x=x-10;
-        }
-      });
-    }
-
-    displaceCards();
-
-    const scrollHandler = () => {
-      if (!stackArea) {
-        return;
+    if (container) {
+      if (e.deltaY > 0) {
+        container.scrollLeft += 50;
+        e.preventDefault();
+      } else {
+        container.scrollLeft -= 50;
+        e.preventDefault();
       }
+    }
+  };
 
-      let proportion = stackArea.getBoundingClientRect().top / window.innerHeight;
-      if (proportion <= 0) {
-        let n = cards.length;
-        let index = Math.ceil((proportion * n) / 2);
-        index = Math.abs(index) - 1;
-        for (let i = 0; i < n; i++) {
-          if (i <= index) {
-            cards[i].classList.add("active");
-          } else {
-            cards[i].classList.remove("active");
-          }
-        }
-        displaceCards();
-      }
-    };
-
-    window.addEventListener("scroll", scrollHandler);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
-
+  
   const handleButtonClick = () => {
     setClosed(true);
     setTimeout(() => {
       navigate("/");
     }, 900);
   };
-
-
+  
   return (
-    <div className="container-ps">
+    <div className="ps-container">
       <m.div
         initial={{ x: "-100%" }}
         animate={{ x: closed ? "-100%" : "0%" }}
@@ -81,52 +45,48 @@ const PS = () => {
         className="background"
       >
         
-        <h1 className="ps-title">Problem Statements</h1>
+        <h1 className="ps-title">Track & PS</h1>
 
-        <div className="center">
-          <div className="stack-area">
-            <div className="right">
-              <div className="cards">
+              <div className="cards"
+                ref={containerRef}
+                onWheel={handleWheel}
+                style={{overflowY:"auto"}}
+              >
 
-                <div className="card">
-                  <h2 className="title">Web & App</h2>
-                {web.map((statement)=>(
+              <div className="section">
+                  <h2 className="section-title">Web & App</h2>
                   <div className="content">
-                    <p>
+                  {web.map((statement)=>(
+                    <span>
                       {statement.ps}
-                    </p>
+                    </span>
+                  ))}
                   </div>
-                ))}
                 </div>
 
-
-                <div className="card">
-                  <h2 className="title">Block-chain</h2>
-                {blockchain.map((statement)=>(
+                <div className="section">
+                  <h2 className="section-title">BlockChain</h2>
                   <div className="content">
-                    <p>
+                  {blockchain.map((statement)=>(
+                    <span>
                       {statement.ps}
-                    </p>
+                    </span>
+                  ))}
                   </div>
-                ))}
                 </div>
 
-
-                <div className="card">
-                  <h2 className="title">Cybersecurity</h2>
-                {cyber.map((statement)=>(
+                <div className="section">
+                  <h2 className="section-title">Cybersecurity</h2>
                   <div className="content">
-                    <p>
+                  {cyber.map((statement)=>(
+                    <span>
                       {statement.ps}
-                    </p>
+                    </span>
+                  ))}
                   </div>
-                ))}
                 </div>
 
               </div>
-            </div>
-          </div>
-        </div>
 
         <div className="close-div">
           <button className="close" onClick={handleButtonClick}>
