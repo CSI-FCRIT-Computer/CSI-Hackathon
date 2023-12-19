@@ -1,27 +1,32 @@
 [
     {
         "id": "1",
-        "ques": "Question1",
-        "ans": "Answer1"
+        "ques": "What is the maximum number of members allowed in a team?",
+        "ans": "- The maximum number of members allowed in a team is strictly 4"
     },
     {
         "id": "2",
-        "ques": "Question2",
-        "ans": "Answer2"
+        "ques": "How long is the hackathon going to last?",
+        "ans": "- The hackathon will be a 36 hour long hackathon"
     },
     {
         "id": "3",
-        "ques": "Question3",
-        "ans": "Answer3"
+        "ques": "How do I register for the hackathon?",
+        "ans": "- Register your team at Devfolio"
     },
     {
         "id": "4",
-        "ques": "Question4",
-        "ans": "Answer4"
+        "ques": "Where can I find the hackathon rules and guidelines?",
+        "ans": "- You can download the official document containing the hackathon rules and guidelines here."
     },
     {
         "id": "5",
-        "ques": "Question5",
-        "ans": "Answer5"
+        "ques": "Is accommodation provided for my team outside of the hackathon duration?",
+        "ans": "- No, accommodation will only be provided for the duration of the hackathon."
+    },
+    {
+        "id": "6",
+        "ques": "What if my queries are still not clear",
+        "ans": "- Feel free to email us at 'agnethon.2024@gmail.com' for further clarification."
     }
 ]

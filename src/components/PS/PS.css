@@ -1,73 +1,55 @@
+
 h1.ps-title{
-  font-size: 56px;
-  /* color: #fff; */
+  font-size: 45px;
   position: fixed;
-  left: 100%;
+  right: 0vw;
+  left:90vw;
+  width: 10vw;
   height: 100vh;
+  margin:auto;
   text-align: center;
   writing-mode: vertical-lr;
-  /* transform: rotate(180deg); */
-  z-index: 2;
+  font-family: 'Syne', sans-serif;
+  text-decoration: underline;
+  color:white;
+  background-color: #020213;
+
 }
-.center {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.stack-area {
-  width: 100%;
-  height: 300vh;
-  position: relative;
-}
-.right{
+
+.container{
+  margin:0;
+  right:0;
+  width: 100vw;
+  left:90vw;
+  background-color:#020213;
+  background: url("../About/images/AboutTextBg.png");
+  
   height: 100vh;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  box-sizing: border-box;
-  flex-basis: 50%;
 }
+
 .cards {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: row-reverse; 
+  overflow-x: auto;
+  margin:0;
+  width:90vw;
+  padding-top: 5vh;
+  background-color:#020213;
+  background: url("../About/images/AboutTextBg.png");
+  height: 100vh;
+
 }
 .card {
-  width: 100%;
-  height: 80%;
-  box-sizing: border-box;
-  padding: 35px;
-  border-radius: 6mm;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: 0.5s ease-in-out;
+  width: 70vw;
+    height: 80vh;
+    flex: 0 0 auto; 
+    margin-right: 5vw; 
+
+}
+.card :nth-child(3){
+  margin-left: 5vw;
 }
 
-.card:nth-child(1) {
-  z-index: 4;
-}
-
-.card:nth-child(2) {  
-  z-index: 3;
-}
-
-.card:nth-child(3) {
-  z-index: 2;
-}
-
-.card:nth-child(4) {
-  z-index: 1;
-}
 
 .sub {
   font-family: poppins;
@@ -87,14 +69,12 @@ h1.ps-title{
 }
 
 
-
 .close-div {
   position: fixed;
-  bottom: 50px;
+  top: 95vh;
   width: 100%;
   z-index: 111111;
   text-align: center;
-  border: 2px solid red;
 }
 .close {
   color: rgb(151, 151, 151);
@@ -104,10 +84,9 @@ h1.ps-title{
   cursor: pointer;
   transition: transform 0.35s ease;
   font-weight: bold;
-  border: 2px solid red;
 } 
 .close:hover {
   font-weight: bold;
-  transform: translateY(-5px);
+  transform: translateY(-15px);
   color: #7b8085;
 }

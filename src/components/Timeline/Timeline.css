@@ -4,7 +4,7 @@
 ::-webkit-scrollbar{
   display: none;
 }
-*{
+.main *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +16,7 @@
     background-color: #020213;
     height: max-content;
     width: 100vw;
-    background-size: cover; 
+    /* background-size: cover;  */
   }
   h1.timeline-title{
     font-size: 56px;
@@ -48,9 +48,11 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    border-right: 5px solid white;
     /* border-left: 5px solid white; */
   } 
+  .day-1{
+    border-right: 5px solid white;
+  }
   h2.title-day{
     font-family: 'Syne', sans-serif;
     position: absolute;
@@ -147,14 +149,14 @@
 
 
 
-  .close-div {
+  .main .close-div {
     position: absolute;
     bottom: 50px;
     width: 100%;
     z-index: 111111;
     text-align: center;
   }
-  .close {
+  .main .close {
     color: rgb(151, 151, 151);
     background: none;
     border: none;
@@ -162,7 +164,7 @@
     transition: transform 0.35s ease;
     font-weight: bold;
   } 
-  .close:hover {
+  .main .close:hover {
     font-weight: bold;
     transform: translateY(-5px);
     color: #7b8085;
@@ -189,11 +191,14 @@
       flex-direction: column;
       border-right: unset;
       border-left: unset;
-      border-bottom: 5px solid white;
       padding: 10px 0;
       position: relative;
       /* background-color: black; */
     }
+    .day-1{
+      border-bottom: 5px solid white;
+    }
+
     h2.title-day{
       position: absolute;
       right: 0;
@@ -238,13 +243,13 @@
         transform: translate(-125%, -75%);
       }
     }
-    .close-div {
+    .main .close-div {
       bottom: 92%;
-      right: 10px;
+      right: 5%;
       width: unset;
       font-size: 24px;
     }
-    .close>span{
+    .main .close>span{
       display: none;
     }
   }

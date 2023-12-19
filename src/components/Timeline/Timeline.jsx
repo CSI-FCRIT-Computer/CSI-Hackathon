@@ -51,7 +51,7 @@ const Timeline = () => {
           onWheel={handleWheel}
           style={{ overflowX: 'auto', whiteSpace: 'nowrap', width: '100%' }}
         >
-          <div className="day">
+          <div className="day day-1">
             <h2 className="title-day">Day 1</h2>
             {day1.map((timestamp) => (
               <div className="timeline-content" key={timestamp.id}>
