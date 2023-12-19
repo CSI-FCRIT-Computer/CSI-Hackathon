@@ -1,63 +1,64 @@
+
 [
     {
         "id" :"1",
         "name" : "abc",
         "type" : "platinum",
-        "logo" : "./asset/logo/mlh-logo.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id" :"2",
         "name" : "abc",
         "type" : "gold",
-        "logo" : "./asset/logo/postman.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id" :"3",
         "name" : "abc",
         "type" : "silver",
-        "logo" : "./asset/logo/postman.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id" :"4",
         "name" : "abc",
         "type" : "bronze",
-        "logo" : "./asset/logo/postman.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id":"5",
         "name" :"abc",
         "type" :"gold",
-        "logo" :"./asset/logo/pngwing.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id":"6",
         "name" :"abc",
         "type" :"silver",
-        "logo" :"./asset/logo/pngwing.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id":"7",
         "name" :"abc",
         "type" :"bronze",
-        "logo" :"./asset/logo/pngwing.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id" :"8",
         "name" : "abc",
         "type" : "silver",
-        "logo" : "./asset/logo/postman.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id" :"9",
         "name" : "abc",
         "type" : "bronze",
-        "logo" : "./asset/logo/postman.svg"
+        "logo" : "./asset/logo/images.png"
     },
     {
         "id":"10",
         "name" :"abc",
         "type" :"bronze",
-        "logo" :"./asset/logo/pngwing.svg"
+        "logo" : "./asset/logo/images.png"
     }
 
 ]
