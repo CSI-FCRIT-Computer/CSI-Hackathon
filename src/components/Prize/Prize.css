@@ -275,10 +275,12 @@ body{
     width: 100%;
     margin-top: 3%;
     line-height: 30px;
+    border: none;
+    background: none;
     color: #ffffff;
-    background-color: #03041f;
-    border: 2px solid #C0C0C0;
-    border-bottom: 0;
+    /* background-color: #03041f; */
+    /* border: 2px solid #C0C0C0; */
+    /* border-bottom: 0; */
 }
 .accordion{
     background-color: #03041f;
