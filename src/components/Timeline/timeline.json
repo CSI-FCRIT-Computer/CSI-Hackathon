@@ -19,15 +19,21 @@
     },
     {
         "dd": "1",
-        "dt": "1:30 PM",
+        "dt": "1:00 PM",
         "event": "Lunch",
         "icon": "fas fa-utensils"
     },
     {
         "dd": "1",
         "dt": "5:00 PM",
-        "event": "Eval 1",
+        "event": "Eval-1",
         "icon": "fas fa-user-check"
+    },
+    {
+        "dd": "1",
+        "dt": "Post Eval",
+        "event": "Tea & Snacks",
+        "icon": "fas fa-mug-hot"
     },
     {
         "dd": "1",
@@ -38,31 +44,38 @@
     {
         "dd": "2",
         "dt": "8:00 AM",
-        "event": "Check In",
-        "icon": "fas fa-map-marker-alt"
-    },
-    {
-        "dd": "2",
-        "dt": "9:00 AM",
-        "event": "Resume Coding",
-        "icon": "fas fa-code"
-    },
-    {
-        "dd": "2",
-        "dt": "1:30 PM",
-        "event": "Lunch",
+        "event":  "Breakfast",
         "icon": "fas fa-utensils"
     },
     {
         "dd": "2",
-        "dt": "5:00 PM",
-        "event": "Eval 2",
+        "dt": "9:00 AM",
+        "event": "Eval-2",
         "icon": "fas fa-user-check"
     },
     {
         "dd": "2",
-        "dt": "8:00 PM",
-        "event": "Dinner",
+        "dt": "10:30 AM",
+        "event": "Final Presentation",
+        "icon": "fas fa-chalkboard-teacher"
+    },
+    {
+        "dd": "2",
+        "dt": "12:00 PM",
+        "event": "Lunch",
         "icon": "fas fa-pizza-slice"
+    },
+    {
+        "dd": "2",
+        "dt": "1:00 PM",
+        "event": "Prize Distribution",
+        "icon": "fa fa-medal"
+    },
+    {
+        "dd": "2",
+        "dt": "2:00 PM",
+        "event": "Check Out",
+        "icon": "fas fa-map-marker-alt"
+
     }
 ]

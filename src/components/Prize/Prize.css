@@ -1,10 +1,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kameron&family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Skranji:wght@700&family=Sura:wght@700&family=Syne:wght@600&family=Tapestry&display=swap');
 
+body{
+    background-image: url('./TimelineBg.png');
+}
+
+.s-img{
+    width: 65%;
+    border-radius: 50%;
+}
+
+.award-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.left-img {
+    position: inherit;
+    left: 25%;
+    z-index: 3;
+    width: 50%;
+}
+.right-img {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    top: 20px;
+    width: 50%;
+}
+.centre-img {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    top: 20px;
+    width: 50%;
+}
+
+
 .prize{
+    background-image: url('./TimelineBg.png');
     padding: 0 5vw;
     position: relative; 
-    background: #03041f;
     color: white;
     
 }
@@ -18,12 +57,15 @@
 .img-container{
     position: relative;
     display: inline-block;
+    /* border: #CD7F32 solid 2px; */
+   
 }
 
-.img-container img{
+/* .img-container img{
     align-self: center;
-    width: 98%;
-}
+    width: 100%;
+    align-items: center;    
+} */
 
 .text-overlay1 {
     position: absolute;
@@ -158,7 +200,7 @@
     border: 2px solid #FFD700;
     margin: 2vh 0;
     border-radius: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .gcard img{
@@ -186,7 +228,7 @@
     justify-content: space-around;
     border: 2px solid #C0C0C0;
     margin: 2vh 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-radius: 10px;
 }
 
@@ -215,7 +257,7 @@
     justify-content: space-around;
     border: 2px solid #CD7F32;
     margin: 2vh 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-radius: 10px;
 }
 
@@ -233,10 +275,12 @@
     width: 100%;
     margin-top: 3%;
     line-height: 30px;
+    border: none;
+    background: none;
     color: #ffffff;
-    background-color: #03041f;
-    border: 2px solid #C0C0C0;
-    border-bottom: 0;
+    /* background-color: #03041f; */
+    /* border: 2px solid #C0C0C0; */
+    /* border-bottom: 0; */
 }
 .accordion{
     background-color: #03041f;
@@ -247,18 +291,14 @@
 .accordion-item{
     background-color: #03041f;
     color: #ffffff;
-    font-weight: 600;
+    
 }
-.accordion-button{
-    font-weight: 600;
-}
+
 .accordion-item button{
     background-color: #03041f;
     color: #ffffff;
 }
-.accordion-button:not(.collapsed){
-    background-color:#C0C0C0;
-}
+
 
 @media (max-width: 580px){
     .prize-txt{
@@ -270,4 +310,16 @@
     font-weight: 600;
     font-size: 2rem;
     }
+    .gcard{
+        flex-wrap: wrap;
+    }
+    .bcard{
+      flex-wrap: wrap;
+    }
+    .scard{
+        flex-wrap: wrap;
+      }
+      .sponsors-title-txt{
+        font-size: 2.5rem;
+      }
 }
