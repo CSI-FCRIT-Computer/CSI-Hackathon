@@ -91,7 +91,6 @@
     background: #FFF;
     content: "";
     z-index: 0;
-    /* border: 2px solid red; */
   }
   .timeline-icon{
     width: 100px;
@@ -117,9 +116,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    bottom: 35%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: pre-wrap;
   }
   .timeline-event{
     text-align: center;
@@ -140,7 +140,7 @@
       top: 70%;
     }
     .timeline-info{
-      bottom: 50%;
+      top: 40%;
       transform: translate(-50%, -50%);
     }
   }
@@ -220,8 +220,8 @@
       left: 0%;
     }
     .timeline-info{
-      top: 25%;
-      left: 75%;
+      top: 30%;
+      left: 90%;
       transform: translate(-50%, -50%);
     }
     .timeline-period{
@@ -234,7 +234,8 @@
         left: 100%;
       }
       .timeline-info{
-        bottom: 50%;
+        bottom: 35%;
+        left: 75%;
         transform: translate(-125%, -75%);
       }
     }
