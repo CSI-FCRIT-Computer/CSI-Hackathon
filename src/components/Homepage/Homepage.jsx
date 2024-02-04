@@ -1,10 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Homepage.css"; 
-import csilogo from "../assets/csilogo.png";
 import Typewriter from './typewriter/typewriter.js';
 import { motion as m } from "framer-motion";
 import logo from "../assets/logo.png";
 import up from "./up.gif"
+import ecellLogo from "../assets/ecellfcritb.png";
+import iicLogo from "../assets/iiclogo.png";
+import clgLogo from "../assets/clgLogo.png";
+import csilogo from "../assets/csilogo.png";
+
 import toggle from "../assets/toggle.png";
 import soundoff from "../assets/icon-sound-off.png";
 import soundon from "../assets/icon-sound-on.png";
@@ -62,7 +66,7 @@ const Homepage = () => {
         <img src={toggle} width="40" alt="toggle" />
       </div> */}
        <div className="csilogo">
-        <img src={csilogo} width="50" alt="csilogo" />
+        <img src={clgLogo} width="50" alt="csilogo" />
       </div>
       <div className="ps">
         <button>
@@ -73,6 +77,14 @@ const Homepage = () => {
       <div className="background-container">
         {/* <img src={waves} alt="waves"/> */}
       </div>
+      <div className="colabrator-contanier">
+         <img src={csilogo}  width="75" alt="csilogo"/> 
+         <span>X</span>
+         <img src={iicLogo}  width="75" alt="iicLogo"/> 
+         <span>X</span>
+         <img src={ecellLogo}  width="75" alt="ecellLogo"/> 
+      </div>
+
         <div className="main-title">AGNETHON</div>
         <Typewriter className="tw">Code.Collaborate.Conquer</Typewriter>
         <div className="buttons-container">
