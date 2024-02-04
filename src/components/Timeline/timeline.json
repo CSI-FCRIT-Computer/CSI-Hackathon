@@ -1,81 +1,51 @@
 [
     {
         "dd": "1",
-        "dt": "8:00 AM",
-        "event": "Check In",
-        "icon": "fas fa-map-marker-alt"
-    },
-    {
-        "dd": "1",
-        "dt": "9:00 AM",
-        "event": "Inauguration",
-        "icon": "far fa-thumbs-up"
-    },
-    {
-        "dd": "1",
         "dt": "10:00 AM",
-        "event": "Start Coding",
+        "event": "Problem Statement Debriefing by mentor",
+        "icon": "fas fa-chalkboard-teacher"
+    },
+    {
+        "dd": "1",
+        "dt": "11:00 AM",
+        "event": "Coding Round Begins",
         "icon": "fas fa-code"
     },
     {
         "dd": "1",
-        "dt": "1:00 PM",
-        "event": "Lunch",
-        "icon": "fas fa-utensils"
-    },
-    {
-        "dd": "1",
         "dt": "5:00 PM",
-        "event": "Eval-1",
-        "icon": "fas fa-user-check"
+        "event": "1st Evaluation Round",
+        "icon": "fas fa-laptop-code"
     },
     {
         "dd": "1",
-        "dt": "Post Eval",
-        "event": "Tea & Snacks",
-        "icon": "fas fa-mug-hot"
+        "dt": "6:00 PM",
+        "event": "1st Code Push",
+        "icon": "fas fa-code-branch"
     },
-    {
-        "dd": "1",
-        "dt": "8:00 PM",
-        "event": "Dinner",
-        "icon": "fas fa-pizza-slice"
-    },
-    {
-        "dd": "2",
-        "dt": "8:00 AM",
-        "event":  "Breakfast",
-        "icon": "fas fa-utensils"
-    },
+
     {
         "dd": "2",
         "dt": "9:00 AM",
-        "event": "Eval-2",
-        "icon": "fas fa-user-check"
+        "event": "2nd Code Push",
+        "icon": "fas fa-code-branch"
     },
     {
         "dd": "2",
-        "dt": "10:30 AM",
-        "event": "Final Presentation",
-        "icon": "fas fa-chalkboard-teacher"
+        "dt": "11:00 AM",
+        "event": "2nd Evaluation Round",
+        "icon": "fas fa-laptop-code"
     },
     {
         "dd": "2",
-        "dt": "12:00 PM",
-        "event": "Lunch",
-        "icon": "fas fa-pizza-slice"
+        "dt": "5:00 PM",
+        "event": "3rd Code Push",
+        "icon": "fas fa-code-branch"
     },
     {
         "dd": "2",
-        "dt": "1:00 PM",
-        "event": "Prize Distribution",
-        "icon": "fa fa-medal"
-    },
-    {
-        "dd": "2",
-        "dt": "2:00 PM",
-        "event": "Check Out",
-        "icon": "fas fa-map-marker-alt"
-
+        "dt": "12:00 AM",
+        "event": "Final push and submission of 5 minutes video",
+        "icon": "fas fa-file-video"
     }
 ]

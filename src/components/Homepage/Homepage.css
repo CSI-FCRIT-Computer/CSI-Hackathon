@@ -13,6 +13,10 @@ body {
   background: url('waves.png') center/contain no-repeat; 
   z-index: 0; 
 }
+.colabrator-contanier span{
+  font-size: x-large;
+  margin: 0 20px;
+}
 .homepage-container {
   color: #d9e1e9;
   background: url(bg.png) repeat 0 0;
@@ -49,7 +53,7 @@ body {
   max-width: 1%;
   height: auto;
   position: absolute;
-  top: 0;
+  top: -11px;
   left: 0;
   z-index: 100;
 }
@@ -319,6 +323,14 @@ body {
   .label-up {
     font-size: 10px;
   }
+  .colabrator-contanier img{
+    width: 45px;
+  }
+  .colabrator-contanier span{
+    font-size: large;
+    margin: 0 10px;
+  }
+  
 }
 .social-icons:hover .label-up {
   top: -100%;
@@ -351,4 +363,8 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+#circle-img{
+  border-radius: 50%;
 }
