@@ -78,11 +78,11 @@ const Homepage = () => {
         {/* <img src={waves} alt="waves"/> */}
       </div>
       <div className="colabrator-contanier">
+      <img src={iicLogo}  width="75" alt="iicLogo"/> 
+         <span>X</span>
          <img src={csilogo}  width="75" alt="csilogo"/> 
          <span>X</span>
-         <img src={iicLogo}  width="75" alt="iicLogo"/> 
-         <span>X</span>
-         <img src={ecellLogo}  width="75" alt="ecellLogo"/> 
+         <img src={ecellLogo}  width="75" id='circle-img' alt="ecellLogo"/> 
       </div>
 
         <div className="main-title">AGNETHON</div>

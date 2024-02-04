@@ -364,3 +364,7 @@ body {
   border: none;
   cursor: pointer;
 }
+
+#circle-img{
+  border-radius: 50%;
+}
