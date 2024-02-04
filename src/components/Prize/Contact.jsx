@@ -92,61 +92,77 @@ const Contact = () => {
           </div>
         </div>
         </div>
-                {/* Social media icons */}
-                <div className="social-icons-container">
-                  <div className="connect-with-us">Connect with us on</div>
-                  <div className="social-icons-group">
-                  <div className="social-icons-item">
-                    <div className="sc">
-                    <span>CSI Comp</span>
-                    <ul>
-                      <li>
-                        <a className="icon-link" href="https://www.instagram.com/csifcrit/">
-                          <FontAwesomeIcon icon={faInstagram} className="fa-brands fa-instagram instagram" />
-                        </a>
-                      </li>
-                      <li>
-                        <a className="icon-link" href="https://www.linkedin.com/company/csi-computer-fcrit/">
-                          <FontAwesomeIcon icon={faLinkedin} className="fa-brands linkedin" />
-                        </a>
-                      </li>
-                    </ul>
-                    </div>
-                    </div>
-                    <div className="social-icons-item">
-                      <div className="sc">
-                    <span>CSI IT</span>
-                    <ul>
-                      <li>
-                        <a className="icon-link" href="https://instagram.com/csiitfcrit/">
-                          <FontAwesomeIcon icon={faInstagram} className="fa-brands  instagram" />
-                        </a>
-                      </li>
-                      <li>
-                        <a className="icon-link" href="https://www.linkedin.com/company/csi-it-fcrit/about/">
-                          <FontAwesomeIcon icon={faLinkedin} className="fa-brands linkedin" />
-                        </a>
-                      </li>
-                    </ul>
-                    </div>
-                    </div>
-                  </div>
-                  <div className="join-discord">
-                  <div className="social-icons-group">
-                  <div className="social-icons-item">
-                    
-                    <span>Join our discord for more details</span>
-                    <ul>
-                  <li className="discordi">
-                    <a href="#">
-                      <FontAwesomeIcon icon={faDiscord} className="fa-brands fa-discord " />
+      <div className="social-icons-container">
+        <div className="connect-with-us">Connect with us on</div>
+        <div className="social-icons-group">
+          <div className="social-icons-item">
+            <div className="sc" >
+              <span>CSI Comp</span>
+              <ul>
+                <li>
+                  <a className="icon-link" href="https://www.instagram.com/csifcrit/">
+                    <FontAwesomeIcon icon={faInstagram} className="fa-brands fa-instagram instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a className="icon-link" href="https://www.linkedin.com/company/csi-computer-fcrit/">
+                    <FontAwesomeIcon icon={faLinkedin} className="fa-brands linkedin" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="social-icons-item">
+            <div className="sc">
+              <span>CSI IT</span>
+              <ul>
+                <li>
+                  <a className="icon-link" href="https://instagram.com/csiitfcrit/">
+                    <FontAwesomeIcon icon={faInstagram} className="fa-brands  instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a className="icon-link" href="https://www.linkedin.com/company/csi-it-fcrit/about/">
+                    <FontAwesomeIcon icon={faLinkedin} className="fa-brands linkedin" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="join-discord">
+          <div className="social-icons-group">
+            <div className="social-icons-item">
+              <div className="sc">
+                <span>ECELL</span>
+                <ul>
+                  <li>
+                    <a className="icon-link" href="https://www.instagram.com/ecellfcrit/">
+                      <FontAwesomeIcon icon={faInstagram} className="fa-brands  instagram" />
                     </a>
                   </li>
-                  </ul>
-                  </div>
-                  </div>
-                  </div>
-                </div>
+                  <li>
+                    <a className="icon-link" href="https://www.linkedin.com/company/fcrit-entrepreneurship-cell/">
+                      <FontAwesomeIcon icon={faLinkedin} className="fa-brands linkedin" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="social-icons-item">
+
+              <span>Join our discord</span>
+              <ul>
+                <li className="discordi">
+                  <a href="#">
+                    <FontAwesomeIcon icon={faDiscord} className="fa-brands fa-discord " />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </div>
