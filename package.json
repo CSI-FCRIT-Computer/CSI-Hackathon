@@ -18,7 +18,7 @@
     "compass-mixins": "^0.12.12",
     "emailjs-com": "^3.2.0",
     "font-awesome": "^4.7.0",
-    "framer-motion": "10.9.1",
+    "framer-motion": "^11.0.3",
     "loader-utils": "3.2.1",
     "node-sass": "^7.0.3",
     "react": "18.2.0",
