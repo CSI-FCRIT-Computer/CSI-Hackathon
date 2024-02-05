@@ -158,7 +158,7 @@ const Contact = () => {
               <span>Join our discord</span>
               <ul>
                 <li className="discordi">
-                  <a href="#">
+                  <a href="https://discord.gg/MAjwaapcGr">
                     <FontAwesomeIcon icon={faDiscord} className="fa-brands fa-discord " />
                   </a>
                 </li>

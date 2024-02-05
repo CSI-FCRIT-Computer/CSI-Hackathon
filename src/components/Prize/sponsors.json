@@ -12,7 +12,7 @@
     {
         "id" :"4",
         "name" : "Finlatics",
-        "type" : "bronze",
+        "type" : "silver",
         "logo" : "./asset/sponsors/finlatics.jpg",
         "alt" : "FINLATICS LOGO",
         "link" : "https://www.finlatics.com/"
@@ -20,7 +20,7 @@
     {
         "id":"5",
         "name" :"Polygon",
-        "type" :"gold",
+        "type" :"silver",
         "alt": "POLYGON LOGO",
         "logo" : "./asset/sponsors/Polygon.jpg",
         "link" : "https://polygon.technology/"
