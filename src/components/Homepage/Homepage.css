@@ -40,7 +40,7 @@ body {
   margin: 0;
   padding-top: 1.2rem;
   padding-right: 4rem;
-  max-width: 1%;
+  max-width: 5%;
   height: auto;
   position: absolute;
   top: 0;
@@ -50,7 +50,7 @@ body {
 .logo {
   margin: 0;
   padding: 15px;
-  max-width: 1%;
+  max-width: 5%;
   height: auto;
   position: absolute;
   top: -11px;
@@ -119,7 +119,7 @@ body {
   font-size: 2.6vw;
 }
 .buttons-container {
-  padding-top: 10px;
+  padding-top: 15px;
   display: flex;
   gap: 20px; 
   flex-direction: column; 
@@ -231,6 +231,13 @@ body {
     font-size: 1.4rem; 
   }
 } */
+/* @media (max-width: 550px) {
+  .title .main-title {
+    position: absolute;
+    top:30%;
+  }
+
+} */
 .mainimg {
   position: absolute;
   top: 50%;
@@ -319,18 +326,26 @@ body {
   top: 0%;
   transition: 0.3s;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 500px) {
   .label-up {
     font-size: 10px;
   }
+  .colabrator-contanier{
+    /* top:4%;
+    position:absolute; */
+    padding-bottom: 5px;
+  }
   .colabrator-contanier img{
-    width: 45px;
+    width: 40px;
+    /* padding-bottom:10px; */
   }
   .colabrator-contanier span{
     font-size: large;
     margin: 0 10px;
   }
-  
+  /* left: 0; 
+  margin: 10px; */
+
 }
 .social-icons:hover .label-up {
   top: -100%;

@@ -5,7 +5,9 @@
   color: white;
   /* background: #5b6b78; */
 }
-
+.comp-text{
+  padding-bottom: 10px;
+}
 .about-container {
   /* color: #d9e1e9; */
   /* background-image: radial-gradient(

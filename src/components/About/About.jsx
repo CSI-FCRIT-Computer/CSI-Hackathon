@@ -4,7 +4,7 @@ import { useScroll } from "framer-motion"
 import "./About.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
-import csilogo from "../assets/csilogo.png";
+import clglogo from "../assets/clgLogo.png";
 import college from "./images/clg.jpg";
 import AboutUsText from "./AboutUsText";
 import CsiGrid from "./CsiGrid";
@@ -39,7 +39,7 @@ const About = () => {
           <img src={logo} width="75" alt="logo" />
         </div>
         <div className="csilogo">
-        <img src={csilogo} width="50" alt="csilogo" />
+        <img src={clglogo} width="50" alt="csilogo" />
       </div>
         <div className="About-content">
         <AboutAgnethon />

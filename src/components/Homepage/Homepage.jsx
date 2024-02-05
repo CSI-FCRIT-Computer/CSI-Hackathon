@@ -88,8 +88,11 @@ const Homepage = () => {
         <div className="main-title">AGNETHON</div>
         <Typewriter className="tw">Code.Collaborate.Conquer</Typewriter>
         <div className="buttons-container">
-          <button className="glow-on-hover" type="button">Register on Devfolio</button>
-          <button className="glow-on-hover" type="button">Download Brochure</button>
+          <button className="glow-on-hover graybtn" type="button">Register on Devfolio</button>
+          <button className="glow-on-hover graybtn" type="button">Download Brochure</button>
+        </div>
+        <div className="buttons-container">
+          <button className="glow-on-hover dc" type="button">Join Discord</button>
         </div>
         </div>
       <div className="timeline">

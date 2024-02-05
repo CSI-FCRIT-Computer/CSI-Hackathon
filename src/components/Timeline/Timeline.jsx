@@ -52,7 +52,7 @@ const Timeline = () => {
           style={{ overflowX: 'auto', whiteSpace: 'nowrap', width: '100%' }}
         >
           <div className="day">
-            <h2 className="title-day">Day 1</h2>
+            <h2 className="title-day">Day 1 - 24 Feb 2024</h2>
             {day1.map((timestamp) => (
               <div className="timeline-content" key={timestamp.id}>
                 <div className="timeline-icon">
@@ -67,7 +67,7 @@ const Timeline = () => {
           </div>
 
           <div className="day">
-            <h2 className="title-day">Day 2</h2>
+            <h2 className="title-day">Day 2 - 25 Feb 2024</h2>
             {day2.map((timestamp) => (
               <div className="timeline-content" key={timestamp.id}>
                 <div className="timeline-icon">

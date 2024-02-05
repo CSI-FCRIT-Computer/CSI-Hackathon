@@ -54,7 +54,7 @@ const PS = () => {
               >
 
               <div className="section">
-                  <h2 className="section-title">Web & App</h2>
+                  <h2 className="section-title">Web & App Development</h2>
                   <div className="content">
                   {web.map((statement)=>(
                     <span>
