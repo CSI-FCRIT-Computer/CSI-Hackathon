@@ -1,64 +1,29 @@
 
 [
-    {
-        "id" :"1",
-        "name" : "abc",
-        "type" : "platinum",
-        "logo" : "./asset/logo/images.png"
-    },
+   
     {
         "id" :"2",
-        "name" : "abc",
+        "name" : "DEVFOLIO",
         "type" : "gold",
-        "logo" : "./asset/logo/images.png"
-    },
-    {
-        "id" :"3",
-        "name" : "abc",
-        "type" : "silver",
-        "logo" : "./asset/logo/images.png"
+        "logo" : "./asset/sponsors/Devfolio.jpg"
     },
     {
         "id" :"4",
-        "name" : "abc",
+        "name" : "Finlatics",
         "type" : "bronze",
-        "logo" : "./asset/logo/images.png"
+        "logo" : "./asset/sponsors/finlatics.jpg"
     },
     {
         "id":"5",
-        "name" :"abc",
+        "name" :"Polygon",
         "type" :"gold",
-        "logo" : "./asset/logo/images.png"
+        "logo" : "./asset/sponsors/Polygon.jpg"
     },
     {
         "id":"6",
-        "name" :"abc",
-        "type" :"silver",
-        "logo" : "./asset/logo/images.png"
-    },
-    {
-        "id":"7",
-        "name" :"abc",
-        "type" :"bronze",
-        "logo" : "./asset/logo/images.png"
-    },
-    {
-        "id" :"8",
-        "name" : "abc",
-        "type" : "silver",
-        "logo" : "./asset/logo/images.png"
-    },
-    {
-        "id" :"9",
-        "name" : "abc",
-        "type" : "bronze",
-        "logo" : "./asset/logo/images.png"
-    },
-    {
-        "id":"10",
-        "name" :"abc",
-        "type" :"bronze",
-        "logo" : "./asset/logo/images.png"
+        "name" :"ETH",
+        "type" :"gold",
+        "logo" : "./asset/sponsors/eth.jpg"
     }
 
 ]

@@ -3,6 +3,7 @@ import React  from "react";
 import "./About.css";
 import CSI_Comp from "./images/csi-comp.JPG";
 import CSI_IT from "./images/csi-it.png";
+import ECELL from "./images/ecellgrp.jpg"
 import { useInView } from 'react-intersection-observer';
 
 
@@ -91,7 +92,22 @@ const CsiGrid=()=>{
                   </ScalingComponent>
                   </div> 
                 }
-             
+             <div className="csi-comp-head col-12">
+                <h1 >E-Cell</h1>
+                </div>
+                <div className="csi-comp-text col-12 col-sm-6">
+                <ScalingComponent>
+                <p className="comp-text">
+                Welcome to ECELL-FCRIT, where the convergence of ingenuity and entrepreneurial prowess materializes. As vanguards in instilling a milieu of originality and astute business acumen, we empower individuals to metamorphose conceptualizations into triumphant enterprises. As forerunners in cultivating inventive ideation, we empower individuals to transcend the conceptual realm and materialize into prosperous enterprises. Our dynamic platform orchestrates synergies, interconnecting nascent entrepreneurs with venerable mentors and imperative resources, essential for the zenith of ascendant maturation. Embark on this metamorphic sojourn, where each cerebral construct crystallizes into a flourishing actuality.
+                </p>
+                </ScalingComponent>
+                </div>
+                <div className="csi-comp-pic col-12 col-sm-6 ">
+                <ScalingComponent >
+                    <img className="img-fluid" src={ECELL} />
+                    </ScalingComponent>
+
+                </div>
             </div>
         </div>
     )

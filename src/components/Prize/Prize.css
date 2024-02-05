@@ -6,8 +6,14 @@ body{
 }
 
 .s-img{
-    width: 65%;
-    border-radius: 50%;
+    width: 80vh;
+    height: 100%;
+    border-radius: 5%;
+}
+.ss-img{
+    align-items: center;
+    display: flex;
+    padding: 1vh;
 }
 
 .award-title{
@@ -169,12 +175,13 @@ body{
 
 .pcard{
     margin: 2vh 0;
-    padding: 7vh 0;
+    padding: 5vh 0;
     justify-content: space-around;
     border: 2px solid #FFFEFC;
     border-radius: 10px;
 }
 .pcard img{
+    border-radius: 5%;
     padding: 3vh;
     max-width: 90%;
 }
@@ -194,7 +201,7 @@ body{
 }
 
 .gcard{
-    padding: 7vh 0;
+    /* padding: 7vh 0; */
     display: flex;
     justify-content: space-around;
     border: 2px solid #FFD700;
@@ -205,7 +212,8 @@ body{
 
 .gcard img{
     max-width: 75%;
-    padding: 3vh;
+    padding: 1vh;
+    border-radius: 5%;
 }
 
 .silver{
@@ -223,7 +231,7 @@ body{
 }
 
 .scard{
-    padding: 7vh 0;
+    padding: 5vh 0;
     display: flex;
     justify-content: space-around;
     border: 2px solid #C0C0C0;
@@ -234,12 +242,13 @@ body{
 
 .scard img{
     max-width: 65%;
-    padding: 3vh;
+    border-radius: 5%;
+    /* padding: 3vh; */
 }
 
 .bronze{
     color: #CD7F32;
-    width: 80vw;
+    width: 30vw;
     align-self: center;
     margin-bottom: 5vh;
     font-family: inter;
@@ -252,7 +261,7 @@ body{
 }
 
 .bcard{
-    padding: 7vh 0;
+    /* padding: 7vh 0; */
     display: flex;
     justify-content: space-around;
     border: 2px solid #CD7F32;
@@ -262,8 +271,9 @@ body{
 }
 
 .bcard img{
-    max-width: 55%;
-    padding: 3vh;
+    max-width: 35%;
+    border-radius: 5%;
+    /* padding: 3vh; */
 }
 
 .contact{
