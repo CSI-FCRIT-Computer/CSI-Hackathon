@@ -74,6 +74,7 @@ function handleDiscordButton(){
       <div className="logo">
         <img src={logo} width="75" alt="logo" />
       </div>
+      
 
       <div className="about-navigator">
       <Link to="/about">
@@ -158,6 +159,11 @@ function handleDiscordButton(){
         </button>
         <audio ref={audioRef} src={bgsound} />
       </div> */}
+      <img src="./asset/sponsors/Devfolio.png" alt="DEVFOLIO LOGO"/> 
+      <img src="./asset/sponsors/Polygon.jpg" alt="POLYGON LOGO"/> 
+      <img src="./asset/sponsors/the.png" alt="ETHINDIA LOGO"/> 
+
+
     </div>
   );
 };

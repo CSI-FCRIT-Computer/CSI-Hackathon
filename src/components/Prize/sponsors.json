@@ -28,7 +28,7 @@
     {
         "id":"6",
         "name" :"ETH",
-        "type" :"gold",
+        "type" :"silver",
         "alt": "ETHINDIA LOGO",
         "link": "https://ethindia.co",
         "logo" : "./asset/sponsors/the.png"
