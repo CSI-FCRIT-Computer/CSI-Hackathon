@@ -113,12 +113,12 @@ function handleDiscordButton(){
         <button className="glow-on-hover dc" onClick={handleDiscordButton} type="button">Join Discord</button>
           <button className="glow-on-hover graybtn" type="button" onClick={handleBrochureDownload}>Download Brochure</button>
         </div>
-        {/* <div 
+        <div 
           className="apply-button" 
           data-hackathon-slug="AGNETHON" 
           data-button-theme="dark-inverted"
           style={{ height: "100px", width: "200px" }}  
-        ></div> */}
+        ></div>
         <div className="buttons-container">
           
            <button className="glow-on-hover graybtn" type="button" >Apply with Devfolio</button>
