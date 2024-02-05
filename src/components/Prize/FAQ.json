@@ -1,13 +1,13 @@
 [
     {
         "id": "1",
-        "ques": "What is the maximum number of members allowed in a team?",
-        "ans": "- The maximum number of members allowed in a team is strictly 4"
+        "ques": "Who can participate?",
+        "ans": "- The hackathon is open for Students from all over India. It is the right place for anyone who's interested in learning and innovating with their ideas."
     },
     {
         "id": "2",
         "ques": "How long is the hackathon going to last?",
-        "ans": "- The hackathon will be a 36 hour long hackathon"
+        "ans": "- The hackathon will be a 48 hour long online hackathon and only shortlisted teams will be present in offline mode"
     },
     {
         "id": "3",
@@ -21,8 +21,8 @@
     },
     {
         "id": "5",
-        "ques": "Is accommodation provided for my team outside of the hackathon duration?",
-        "ans": "- No, accommodation will only be provided for the duration of the hackathon."
+        "ques": "What is the registration cost of Agnethon?",
+        "ans": "- Registration for Agnethon is completely free"
     },
     {
         "id": "6",

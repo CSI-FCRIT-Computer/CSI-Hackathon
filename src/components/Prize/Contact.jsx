@@ -6,10 +6,14 @@ import 'semantic-ui-css/semantic.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css'; // Import your custom CSS file
+// import dotenv from 'dotenv';
 
-const SERVICE_ID = "**************";
-const TEMPLATE_ID = "*******";
-const USER_ID = "****************";
+// dotenv.config();
+
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
+
 
 const Contact = () => {
   const handleOnSubmit = async (e) => {
