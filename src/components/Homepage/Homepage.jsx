@@ -50,7 +50,7 @@ useEffect(() => {
   return () => {
     document.body.removeChild(script);
   }
-}, []);
+}, [1]);
 
 function handleBrochureDownload(){
   window.location.href="https://drive.google.com/file/d/1GQvr-MkcJnZopJX3sPN2aXIPO4dWd3JM/view?usp=drive_link";
@@ -113,18 +113,18 @@ function handleDiscordButton(){
         <button className="glow-on-hover dc" onClick={handleDiscordButton} type="button">Join Discord</button>
           <button className="glow-on-hover graybtn" type="button" onClick={handleBrochureDownload}>Download Brochure</button>
         </div>
-        <div style={{marginTop:'20px',zIndex:'100'}}>
+        <div style={{marginTop:'20px',zIndex:'100',display:'none'}}>
         <div 
           className="apply-button" 
           data-hackathon-slug="agnethonfcrit" 
           data-button-theme="dark"
           style={{ height: "8%", width: "15%",opacity:'100%' }}  
         ></div></div>
-        {/* <div className="buttons-container"> */}
+        <div className="buttons-container"> 
           
-           {/* <button className="glow-on-hover graybtn" type="button" >Apply with Devfolio</button> */}
+           <button className="glow-on-hover graybtn" type="button" >Apply with Devfolio</button>
         
-        {/* </div> */}
+         </div>
         </div>
       <div className="timeline">
         <button>
