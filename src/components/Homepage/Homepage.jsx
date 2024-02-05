@@ -115,7 +115,7 @@ function handleDiscordButton(){
         </div>
         <div 
           className="apply-button" 
-          data-hackathon-slug="AGNETHONFCRIT" 
+          data-hackathon-slug="agnethonfcrit" 
           data-button-theme="dark-inverted"
           style={{ height: "100px", width: "200px" }}  
         ></div>
