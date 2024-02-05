@@ -40,7 +40,16 @@ const Homepage = () => {
   //   audioRef.current.currentTime = 0;
   //   audioRef.current.play();
   // };
-
+//   useEffect(() => {
+//     const script = document.createElement('script');
+//     script.src = 'https://apply.devfolio.co/v2/sdk.js';
+//     script.async = true;
+//     script.defer = true;
+//     document.body.appendChild(script);
+//     return () => {
+//       document.body.removeChild(script);
+//     }
+// }, []);
   return (
     <div className="homepage-container">
        <m.div
@@ -88,6 +97,12 @@ const Homepage = () => {
         <div className="main-title">AGNETHON</div>
         <Typewriter className="tw">Code.Collaborate.Conquer</Typewriter>
         <div className="buttons-container">
+        {/* <div 
+          class="apply-button" 
+          data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+          data-button-theme="light"
+          style={{ height: "100px", width: "200px" }}  
+        ></div> */}
           <button className="glow-on-hover graybtn" type="button">Register on Devfolio</button>
           <button className="glow-on-hover graybtn" type="button">Download Brochure</button>
         </div>
