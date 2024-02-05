@@ -24,6 +24,7 @@ body {
   animation-timing-function: linear;
   height: 100vh;
   width: 100vw;
+  overflow:hidden;
 
 }
 @keyframes bg-scrolling-reverse {
