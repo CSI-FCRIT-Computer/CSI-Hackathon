@@ -5,25 +5,33 @@
         "id" :"2",
         "name" : "DEVFOLIO",
         "type" : "gold",
-        "logo" : "./asset/sponsors/Devfolio.jpg"
+        "logo" : "./asset/sponsors/Devfolio.png",
+        "alt" : "DEVFOLIO LOGO",
+        "link" : "https://devfolio.co"
     },
     {
         "id" :"4",
         "name" : "Finlatics",
         "type" : "bronze",
-        "logo" : "./asset/sponsors/finlatics.jpg"
+        "logo" : "./asset/sponsors/finlatics.jpg",
+        "alt" : "FINLATICS LOGO",
+        "link" : "https://www.finlatics.com/"
     },
     {
         "id":"5",
         "name" :"Polygon",
         "type" :"gold",
-        "logo" : "./asset/sponsors/Polygon.jpg"
+        "alt": "POLYGON LOGO",
+        "logo" : "./asset/sponsors/Polygon.jpg",
+        "link" : "https://polygon.technology/"
     },
     {
         "id":"6",
         "name" :"ETH",
         "type" :"gold",
-        "logo" : "./asset/sponsors/eth.jpg"
+        "alt": "ETHINDIA LOGO",
+        "link": "https://ethindia.co",
+        "logo" : "./asset/sponsors/the.png"
     }
 
 ]

@@ -248,7 +248,7 @@ body{
 
 .bronze{
     color: #CD7F32;
-    width: 30vw;
+    width: 20vw;
     align-self: center;
     margin-bottom: 5vh;
     font-family: inter;
@@ -271,7 +271,7 @@ body{
 }
 
 .bcard img{
-    max-width: 35%;
+    max-width: 50%;
     border-radius: 5%;
     /* padding: 3vh; */
 }
@@ -311,6 +311,12 @@ body{
 
 
 @media (max-width: 580px){
+    .bronze{
+        width: 30vw;}
+
+    .bcard img{
+        max-width: 70%;
+    }    
     .prize-txt{
     z-index: 1;
     left: 36%;
