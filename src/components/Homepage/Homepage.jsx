@@ -41,7 +41,7 @@ const Homepage = () => {
   //   audioRef.current.play();
   // };
 
-React.useEffect(() => {
+useEffect(() => {
   const script = document.createElement('script');
   script.src = 'https://apply.devfolio.co/v2/sdk.js';
   script.async = true;
@@ -113,17 +113,18 @@ function handleDiscordButton(){
         <button className="glow-on-hover dc" onClick={handleDiscordButton} type="button">Join Discord</button>
           <button className="glow-on-hover graybtn" type="button" onClick={handleBrochureDownload}>Download Brochure</button>
         </div>
+        <div style={{marginTop:'20px',zIndex:'100'}}>
         <div 
           className="apply-button" 
           data-hackathon-slug="agnethonfcrit" 
-          data-button-theme="dark-inverted"
-          style={{ height: "100px", width: "200px" }}  
-        ></div>
-        <div className="buttons-container">
+          data-button-theme="dark"
+          style={{ height: "8%", width: "15%",opacity:'100%' }}  
+        ></div></div>
+        {/* <div className="buttons-container"> */}
           
-           <button className="glow-on-hover graybtn" type="button" >Apply with Devfolio</button>
+           {/* <button className="glow-on-hover graybtn" type="button" >Apply with Devfolio</button> */}
         
-        </div>
+        {/* </div> */}
         </div>
       <div className="timeline">
         <button>
@@ -159,10 +160,11 @@ function handleDiscordButton(){
         </button>
         <audio ref={audioRef} src={bgsound} />
       </div> */}
-      <img src="./asset/sponsors/Devfolio.png" alt="DEVFOLIO LOGO"/> 
-      <img src="./asset/sponsors/Polygon.jpg" alt="POLYGON LOGO"/> 
-      <img src="./asset/sponsors/the.png" alt="ETHINDIA LOGO"/> 
-
+      <div style={{position:'fixed',bottom:'0',left:'0',width:'100%'}}>
+      <img src="./asset/sponsors/Devfolio.png"  style={{height:'4vh',aspectRatio:'4/1',margin:"1% 0.5%"}} alt="DEVFOLIO LOGO"/> 
+      <img src="./asset/sponsors/Polygon.jpg" style={{height:'4vh',aspectRatio:'4/1',margin:"1% 0.5%"}} alt="POLYGON LOGO"/> 
+      <img src="./asset/sponsors/the.png" style={{height:'4vh',aspectRatio:'4/1',margin:"1% 0.5%"}}  alt="ETHINDIA LOGO"/> 
+      </div>
 
     </div>
   );

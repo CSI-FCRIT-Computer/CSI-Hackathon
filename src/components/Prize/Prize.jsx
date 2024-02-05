@@ -67,7 +67,7 @@ function Prize() {
             </div>
 
 
-            <div className="sponsors-container">
+            {/* <div className="sponsors-container">
               <div className="sponsors">
                 <div className="sponsors-title">
                   <div className="sponsors-title-txt">Our Sponsors</div>
@@ -113,7 +113,7 @@ function Prize() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
 
             <div className='m-5'>
