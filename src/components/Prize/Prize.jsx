@@ -52,7 +52,7 @@ function Prize() {
                 <div className="award-title">
                   <div className="sponsors-title-txt">Awards </div>
                 </div>
-                <div className="img-container">
+                {/* <div className="img-container">
                   <img className='centre-img' src={tprize} />
 
 
@@ -62,6 +62,12 @@ function Prize() {
                   <img className='right-img' src={sprize} />
 
 
+                </div> */}
+                <div className='prizepool'>
+                  <h2>Prize Pool</h2>
+                  <h1>₹ 40,000+</h1>
+                  <div>Cash prizes for winners</div>
+                  <div>*Swags and goodies for offline selected participants</div>
                 </div>
               </div>
             </div>

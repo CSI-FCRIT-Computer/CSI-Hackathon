@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kameron&family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Skranji:wght@700&family=Sura:wght@700&family=Syne:wght@600&family=Tapestry&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cash-currency');
 
 body{
     background-image: url('./TimelineBg.png');
@@ -45,7 +46,61 @@ body{
     width: 50%;
 }
 
-
+.prizepool {
+    font-family: 'Cash Currency', sans-serif;                            
+    text-align: center;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+  }
+  
+  .prizepool h2 {
+    font-family: 'Cash Currency', sans-serif;                            
+    color: #d9d7d7;
+    font-size: 24px;
+    font-family: bolder;
+  }
+  
+  .prizepool h1 {
+    font-family: 'Cash Currency', sans-serif;                            
+    color: #e0e3e6; 
+    font-size: 48px;
+    font-weight: 1200;
+    margin: 10px 0;
+  }
+  
+  .prizepool div {
+    font-family: 'Cash Currency', sans-serif;                            
+    color: #e6e5e5;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  
+  .prizepool:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  @media (max-width: 550px) {
+    .prizepool {
+      padding: 15px;
+    }
+  
+    .prizepool h2 {
+      font-size: 20px;
+    }
+  
+    .prizepool h1 {
+      font-size: 36px;
+    }
+  
+    .prizepool div {
+      font-size: 12px;
+    }
+  }
+  
 .prize{
     background-image: url('./TimelineBg.png');
     padding: 0 5vw;
