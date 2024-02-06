@@ -58,6 +58,9 @@ function handleBrochureDownload(){
 function handleDiscordButton(){
   window.location.href="https://discord.gg/MAjwaapcGr";
 }
+  function handleApply(){
+  window.location.href="https://agnethonfcrit.devfolio.co";
+}
 
 
 
@@ -122,7 +125,7 @@ function handleDiscordButton(){
         ></div></div>
         <div className="buttons-container"> 
           
-           <button className="glow-on-hover graybtn" type="button" >Apply with Devfolio</button>
+           <button className="glow-on-hover graybtn" type="button" onClick={handleApply} >Apply with Devfolio</button>
         
          </div>
         </div>
