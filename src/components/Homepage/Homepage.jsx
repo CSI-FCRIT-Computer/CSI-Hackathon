@@ -155,7 +155,7 @@ function handleDiscordButton(){
       </div>
       <div className="other">
      
-        <Link to="/prize"> <img src={up} alt="other"  style={{ transform: 'rotate(180deg)' }}/></Link>
+        <Link to="/prize"> <img src={up} alt="other"  style={{ transform: 'rotate(180deg)',height:'15vh' }}/></Link>
       </div>
       {/* <div className="sound">
         <button className="sound-btn" onClick={toggleAudio}>
