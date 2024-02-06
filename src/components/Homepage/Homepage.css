@@ -384,3 +384,12 @@ body {
 #circle-img{
   border-radius: 50%;
 }
+.marquee-content {
+  white-space: nowrap;
+  animation: marquee-animation 20s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(100%); }
+}
