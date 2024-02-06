@@ -163,10 +163,12 @@ function handleDiscordButton(){
         </button>
         <audio ref={audioRef} src={bgsound} />
       </div> */}
-      <div style={{position:'fixed',bottom:'0',left:'0',width:'100%'}}>
+      <div style={{position:'fixed',bottom:'0',left:'0',width:'100%'}} className="marquee-content">
       <img src="./asset/sponsors/Devfolio.png"  style={{height:'4vh',aspectRatio:'4/1',margin:"1% 0.5%"}} alt="DEVFOLIO LOGO"/> 
       <img src="./asset/sponsors/Polygon.jpg" style={{height:'4vh',aspectRatio:'4/1',margin:"1% 0.5%"}} alt="POLYGON LOGO"/> 
       <img src="./asset/sponsors/the.png" style={{height:'4vh',aspectRatio:'4/1',margin:"1% 0.5%"}}  alt="ETHINDIA LOGO"/> 
+      <img src="./asset/sponsors/finlatics.jpg" style={{height:'4vh',aspectRatio:'4/1',margin:"1% 0.5%"}}  alt="FINLATICS LOGO"/> 
+
       </div>
 
     </div>
