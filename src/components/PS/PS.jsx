@@ -12,6 +12,7 @@ const PS = () => {
   const [closed, setClosed] = useState(false);
   const navigate = useNavigate();
   const containerRef = useRef(null);
+ 
 
   const handleWheel = (e) => {
     const container = containerRef.current;
@@ -44,7 +45,7 @@ const PS = () => {
         transition={{ duration: 0.75, ease: "easeOut" }}
         className="background"
       >
-        
+         
         <h1 className="ps-title">Track & PS</h1>
 
               <div className="cards"
@@ -62,6 +63,8 @@ const PS = () => {
                     </span>
                   ))}
                   </div>
+                  <h4 style={{ color: 'white' }}>Note: Download the complete problem statement from the home page or from our Discord server.</h4>
+
                 </div>
 
                 <div className="section">
@@ -73,6 +76,8 @@ const PS = () => {
                     </span>
                   ))}
                   </div>
+                  <h4 style={{ color: 'white' }}>Note: Download the complete problem statement from the home page or from our Discord server.</h4>
+
                 </div>
 
                 <div className="section">
@@ -84,6 +89,8 @@ const PS = () => {
                     </span>
                   ))}
                   </div>
+                  <h4 style={{ color: 'white' }}>Note: Download the complete problem statement from the home page or from our Discord server.</h4>
+
                 </div>
 
               </div>

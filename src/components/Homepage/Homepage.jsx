@@ -55,6 +55,9 @@ useEffect(() => {
 function handleBrochureDownload(){
   window.location.href="https://drive.google.com/file/d/1GQvr-MkcJnZopJX3sPN2aXIPO4dWd3JM/view?usp=drive_link";
 }
+function handlePSDownload(){
+  window.location.href="https://drive.google.com/file/d/1dkmICnA1fNVSxuRTgLhJIeLVrWBb1w1K/view";
+}
 function handleDiscordButton(){
   window.location.href="https://discord.gg/MAjwaapcGr";
 }
@@ -126,7 +129,8 @@ function handleDiscordButton(){
         <div className="buttons-container"> 
           
            <button className="glow-on-hover graybtn" type="button" onClick={handleApply} >Apply with Devfolio</button>
-        
+           <button className="glow-on-hover graybtn" type="button" onClick={handlePSDownload}>Download PS</button>
+
          </div>
         </div>
       <div className="timeline">
